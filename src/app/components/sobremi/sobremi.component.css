@@ -1,13 +1,18 @@
+.sobremi{
+    margin-top: 150px;
+}
+
 .cards {
     background-color: transparent;
     border: 2px solid rgba(213, 213, 213, 0.2);
     border-radius: 5px;
-    max-width: 400px;
+    max-width: 300px;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-width: 400px;
+    min-width: 1%;
+    padding: 50px;
 }
 
 .bi{
@@ -35,9 +40,20 @@
     display: flex;
     flex-direction: column;
     min-width: 300px;
+    padding: 50px;
     
 }
 
-.sobremi{
-    margin-top: 300px;
+
+.spec{
+    background-color: RGB(123,74, 226,0.1);
+    margin: 80px 70px 20px 70px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #7B4AE2;
+}
+
+.spec-bold{
+    font-weight: 800;
+    font-size: 25px;
 }
