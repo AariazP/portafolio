@@ -1,0 +1,51 @@
+@if(!isExtraSmallScreen){
+  <nav class="navbar navbar-expand-sm nav-references">
+    <h6 class="brand">Aariaz<span class="violet">&#64;</span>Kali$<span class="violet">~</span></h6>
+    <div class="collapse navbar-collapse align-items-center" id="navbarNav">
+      <ul class="navbar-nav">
+  
+        @if(!isSmallScreen){
+          
+          @if(!isMediumScreen){
+            <li class="nav-item">
+              <a class="nav-link" href="#">Inicio</a>
+            </li>
+          }
+        
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre mí</a>
+          </li>
+      }
+        <li class="nav-item">
+          <a class="nav-link" href="#">Portafolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Habilidades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Carrera</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Recomendaciones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Idioma
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">English</a></li>
+              <li><a class="dropdown-item" href="#">Español</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+}@else {
+  <h6>moviles</h6>
+}
+

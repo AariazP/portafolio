@@ -1,0 +1,31 @@
+.nav-references{
+  justify-content: center;
+  display: flex;
+  background-color: RGB(27,0,255,0.05);
+  height: 50px;
+  margin: 10px 40px 0 40px;
+  border-radius: 5px;
+  color:white;
+}
+li{
+  display:inline-block;
+  margin: 0 10px 0 10px;
+}
+
+.nav-link{
+  color: RGB(213,213,213,0.5);
+}
+#navbarNav{
+  justify-content: end;
+}
+.violet{
+  color: #7B4AE2;
+}
+
+.brand{
+  margin-left: 20px;
+}
+
+ul{
+  margin-bottom: 10px;
+}
