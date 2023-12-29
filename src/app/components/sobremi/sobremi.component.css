@@ -1,0 +1,43 @@
+.cards {
+    background-color: transparent;
+    border: 2px solid rgba(213, 213, 213, 0.2);
+    border-radius: 5px;
+    max-width: 400px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 400px;
+}
+
+.bi{
+    color: #7B4AE2;
+    font-size: 30px;
+}
+
+.parrafos{
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.details{
+    margin-top: 0;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.card-item {
+
+
+    border-radius: 5px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    
+}
+
+.sobremi{
+    margin-top: 300px;
+}

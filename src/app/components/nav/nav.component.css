@@ -2,14 +2,20 @@
   justify-content: center;
   display: flex;
   background-color: RGB(27,0,255,0.05);
-  height: 50px;
-  margin: 10px 40px 0 40px;
+  height: 40px;
+  margin: 30px 40px 0 40px;
   border-radius: 5px;
   color:white;
+  
 }
 li{
   display:inline-block;
   margin: 0 10px 0 10px;
+  font-weight: 200;
+}
+
+.nav-link:hover{
+  color: white;
 }
 
 .nav-link{
@@ -24,8 +30,39 @@ li{
 
 .brand{
   margin-left: 20px;
+  font-weight: 300;
 }
 
 ul{
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+}
+
+.dropdown{
+  background-color: transparent;
+  
+}
+.dropdown:hover{
+  color: white;
+}
+button{
+  color: RGB(213,213,213,0.5);
+  font-weight: 200;
+}
+button:active,
+button:focus,
+button:hover,
+button:visited,
+button:link,
+button.dropdown-toggle:focus,
+button.dropdown-toggle:active,
+button.dropdown-toggle:hover,
+button.dropdown-toggle:active:focus{
+  outline: none;
+  border-color: transparent;
+  font-weight: 200;
+}
+
+img{
+  width: 30px;
+  height: 30px;
 }

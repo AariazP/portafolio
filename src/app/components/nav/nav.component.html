@@ -8,44 +8,60 @@
           
           @if(!isMediumScreen){
             <li class="nav-item">
-              <a class="nav-link" href="#">Inicio</a>
+              <a class="nav-link" href="#inicio">Inicio</a>
             </li>
           }
         
           <li class="nav-item">
-            <a class="nav-link" href="#">Sobre mí</a>
+            <a class="nav-link" href="#sobremi">Sobre mí</a>
           </li>
       }
         <li class="nav-item">
-          <a class="nav-link" href="#">Portafolio</a>
+          <a class="nav-link" href="#portafolio">Portafolio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Habilidades</a>
+          <a class="nav-link" href="#habilidades">Habilidades</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Carrera</a>
+          <a class="nav-link" href="#carrera">Carrera</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Recomendaciones</a>
+          <a class="nav-link" href="#recomendaciones">Recomendaciones</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contacto</a>
+          <a class="nav-link" href="#contacto">Contacto</a>
         </li>
         <li class="nav-item">
           <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               Idioma
             </button>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">English</a></li>
-              <li><a class="dropdown-item" href="#">Español</a></li>
+              <li>
+
+                <div class="row">
+                  <div class="col-2">
+                    <img src="assets/flags/usa.png" alt="English" class="flag">
+                  </div>
+                  <div class="col-10">
+                    <a class="dropdown-item" href="#">English</a>
+                  </div>
+                </div>
+               
+              </li>
+              <li><div class="row">
+                  <div class="col-2">
+                    <img src="assets/flags/colombia.png" alt="English" class="flag">
+                  </div>
+                  <div class="col-10">
+                    <a class="dropdown-item" href="#">Español</a>
+                  </div>
+                </div>
+              </li>
             </ul>
           </div>
         </li>
       </ul>
     </div>
   </nav>
-}@else {
-  <h6>moviles</h6>
 }
-

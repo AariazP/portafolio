@@ -1,0 +1,56 @@
+.component{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+img{
+    min-width: 300px;
+
+}
+
+.saludo{
+
+    background-color:rgb(123, 74, 222,0.1) ;
+    
+    color: #7B4AE2;
+    display: inline-block;
+    
+    padding: 10px 10px 0 10px;
+    border-radius: 5px;
+}
+
+.left{
+    align-items: center;
+    justify-content: center;
+}
+
+.subtitle{
+    font-weight: 200;
+    margin-bottom: 10px;
+    color: RGB(213,213,213,0.5);
+}
+
+.redes{
+    margin: 10px;
+    color: RGB(213,213,213,0.5);
+}
+.redes:hover{
+    color: rgb(213, 213, 213);
+    cursor: pointer;
+}
+
+.btn-conversemos{
+    border-color: RGB(213,213,213,0.5);
+    color: RGB(213,213,213,0.5);
+    margin-top: 20px;
+}
+.btn-conversemos:hover,
+.cv:hover{
+    border-color:  rgb(213, 213, 213);
+    color:  rgb(213, 213, 213);
+    cursor: pointer;
+}
+.cv{
+    color:  rgb(213, 213, 213,0.5)
+}
