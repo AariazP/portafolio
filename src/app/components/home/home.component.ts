@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -12,7 +10,7 @@ import { Router } from '@angular/router';
 export class HomeComponent {
 
 
-  constructor(private sanitizer: DomSanitizer) { }
+  constructor() { }
 
 
 
@@ -23,17 +21,17 @@ export class HomeComponent {
   }
 
   descargarCV(): void {
-
-    const pdfFilePath = '/assets/cv/cv_spanish.pdf'; 
+    const pdfPath = 'assets/cv/cv_english.pdf';
     const link = document.createElement('a');
-    link.href = this.sanitizer.bypassSecurityTrustResourceUrl(pdfFilePath) as string;
+    link.href = pdfPath;
     link.target = '_blank';
-    link.download = 'alejandroCV.pdf'; 
+    link.download = 'cv.pdf';  
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-    console.log('descargarCV');
 
   }
+
+  
 
 }
