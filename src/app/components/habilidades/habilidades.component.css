@@ -1,0 +1,53 @@
+.title-habilidades {
+    margin-left: 100px;
+    margin-top: 50px;
+    background-color: rgb(123, 74, 226, 0.1);
+    border-radius: 10px;
+    color: rgb(123, 74, 226);
+    font-size: 10px;
+    display: inline-block;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 600px) {
+    .title-habilidades {
+        margin-left: 0px;
+        font-size: 30px;
+    }
+
+    .div-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tec-cur {
+        font-size: 20px; /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
+    }
+
+    i {
+        font-size: 30px; /* Ajusta el tamaño de los íconos para pantallas más pequeñas */
+        margin:0; /* Reduce el espacio entre los íconos */
+    }
+    
+}
+
+.tec-cur {
+    font-size: 40px;
+    color: rgb(213, 213, 213);
+    margin-top: 50px;
+    margin: 0 50px;
+}
+
+i {
+    color: rgb(213, 213, 213, 0.6);
+    font-size: 2rem;
+    transition: ease-in-out 0.3s;
+    margin: 0px 10px;
+}
+
+i.active {
+    font-size: 50px;
+    color: rgb(123, 74, 226);
+    transform: scale(3);
+}

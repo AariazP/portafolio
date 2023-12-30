@@ -114,8 +114,13 @@
 
 .title-trabajos{
 
-    margin-left: 100px;
     color: rgb(213, 213, 213);
-    font-size: 40px;
-    font-weight: bold;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.div-trabajos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -6,6 +6,7 @@ import { HomeComponent } from "./components/home/home.component";
 import { SobremiComponent } from "./components/sobremi/sobremi.component";
 import { DescComponent } from "./components/desc/desc.component";
 import { ProyectosComponent } from "./components/proyectos/proyectos.component";
+import { HabilidadesComponent } from "./components/habilidades/habilidades.component";
 
 
 @Component({
@@ -13,7 +14,7 @@ import { ProyectosComponent } from "./components/proyectos/proyectos.component";
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [CommonModule, RouterOutlet, NavComponent, HomeComponent, SobremiComponent, DescComponent, ProyectosComponent]
+    imports: [CommonModule, RouterOutlet, NavComponent, HomeComponent, SobremiComponent, DescComponent, ProyectosComponent, HabilidadesComponent]
 })
 export class AppComponent {
 }
