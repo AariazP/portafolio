@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 
 @Component({
@@ -11,7 +12,7 @@ import { Router } from '@angular/router';
 export class HomeComponent {
 
 
-  constructor(private _router:Router) { }
+  constructor(private sanitizer: DomSanitizer) { }
 
 
 
@@ -19,6 +20,20 @@ export class HomeComponent {
     const externalLink = 'https://w.app/jskdka'; 
     window.open(externalLink, '_blank');
     console.log('irWhatsApp');
+  }
+
+  descargarCV(): void {
+
+    const pdfFilePath = 'assets/cv/cv_spanish.pdf'; 
+    const link = document.createElement('a');
+    link.href = this.sanitizer.bypassSecurityTrustResourceUrl(pdfFilePath) as string;
+    link.target = '_blank';
+    link.download = 'alejandroCV.pdf'; 
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    console.log('descargarCV');
+
   }
 
 }
