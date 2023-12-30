@@ -1,19 +1,30 @@
 .cards{
-    margin-top: 150px;
-    margin-left: 70px;
+
+    margin-top: 50px;
+    margin-left: 40px;
+   
+
 }
 .card{
     margin-top: 30px;
     background-color: transparent;
+    color:rgb(213, 213, 213);
+}
+
+.card-title{
+    font-size: 20px;
+    font-weight: bold;
     color: rgb(213, 213, 213);
+    margin-bottom: 20px;    
+    color: RGB(123,74,226);
 }
 
 .container-card{
     padding: 10px 10px;
-    border: 3px solid rgb(213, 213, 213);
+    border: 3px solid rgb(213, 213, 213, 0.1);
     max-width: 312px;
     border-radius: 10px;
-
+    margin-right: 40px;
 }
 
 .btn{
@@ -23,4 +34,88 @@
     border: 1px solid rgb(213, 213, 213);
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.ver-github{
+    background-color: rgb(123,74,226,0.1);
+    color: rgb(123,74,226);
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.portafolio-item{
+    margin-left: 100px;
+    margin-top: 50px;
+    background-color: rgb(123,74,226,0.1);
+    border-radius: 10px;
+    color: rgb(123,74,226);
+    font-size: 30px;
+    display: inline-block;
+
+}
+
+@media screen and (max-width: 600px) {
+    
+    .cards{
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+    .card{
+        margin-top: 30px;
+        background-color: transparent;
+        color: rgb(213, 213, 213);
+    }
+    
+    .container-card{
+        padding: 10px 10px;
+        border: 3px solid rgb(213, 213, 213, 0.1);
+        max-width: 312px;
+        border-radius: 10px;
+    
+    }
+    
+    .btn{
+        background-color: rgb(213, 213, 213);
+        color: rgb(0, 0, 0);
+        border-radius: 10px;
+        border: 1px solid rgb(213, 213, 213);
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .ver-github{
+        background-color: rgb(123,74,226,0.1);
+        color: rgb(123,74,226);
+        border-radius: 10px;
+        border: 1px solid rgb(0, 0, 0);
+        margin-top: 10px;
+        margin-bottom: 10px;
+    
+    }    
+
+}
+
+@media screen and (max-width: 990px) {
+
+    .div-portafolio{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+       
+    }
+    .portafolio-item{
+        margin-left: 0px;
+    }
+    
+}
+
+.title-trabajos{
+
+    margin-left: 100px;
+    color: rgb(213, 213, 213);
+    font-size: 40px;
+    font-weight: bold;
 }
