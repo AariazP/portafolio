@@ -24,7 +24,7 @@ export class HomeComponent {
 
   descargarCV(): void {
 
-    const pdfFilePath = 'assets/cv/cv_spanish.pdf'; 
+    const pdfFilePath = '/assets/cv/cv_spanish.pdf'; 
     const link = document.createElement('a');
     link.href = this.sanitizer.bypassSecurityTrustResourceUrl(pdfFilePath) as string;
     link.target = '_blank';
