@@ -34,3 +34,30 @@ p{
     font-weight: 200;
     color: rgb(213, 213, 213);
 }
+
+.mobile{
+    display: none;
+    margin: 0;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    .component{
+        margin: 0px 0px 0px 0px;
+    }
+    .mobile{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+    .about-me-title{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    p{
+        font-size: 15px;
+    }
+}

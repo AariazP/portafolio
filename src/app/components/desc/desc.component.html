@@ -4,7 +4,7 @@
         <img src="assets/imgs/profile.jpg" alt="Alejandro Arias Ingeniero" class="img-fluid">
     </div>
     <div class="col-lg-6 col-md-12 align-items-center ">
-        <div class=" me-class d-flex align-items-center justify-content-center">
+        <div class=" me-class d-flex align-items-center justify-content-center" [ngClass]="isMobile() ? 'mobile':'' ">
             <span class="about-me-title">🧐 Sobre mí</span>
         </div>
         <h3>José Alejandro Arias</h3>
