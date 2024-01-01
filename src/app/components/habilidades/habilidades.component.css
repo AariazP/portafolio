@@ -37,6 +37,11 @@ i.active {
     color: rgb(123, 74, 226);
     transform: scale(3);
 }
+p{
+    font-size: 30px;
+    margin-top: 80px;
+}
+
 
 @media screen and (max-width: 990px) {
 
@@ -44,10 +49,15 @@ i.active {
         justify-content: center;
         align-items: center;
         display: flex;
+        margin: auto;
        
     }
     .portafolio-item{
-        margin-left: 0px;
+        margin:auto;
+    }
+    p{
+        font-size: 20px;
+        margin-top: 40px;
     }
     
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-habilidades',
@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './habilidades.component.css'
 })
 export class HabilidadesComponent {
+
 
   handleMouseOver(event: MouseEvent): void {
     const target = event.target as HTMLElement;

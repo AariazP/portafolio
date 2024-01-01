@@ -1,10 +1,11 @@
 import { Component, OnInit, signal } from '@angular/core';
 import {CommonModule, NgFor, NgIf} from '@angular/common';
-import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
+import { RouterModule } from '@angular/router';
+
 @Component({
   selector: 'app-nav',
   standalone: true,
-  imports: [ CommonModule, NgIf, NgFor ],//importo ng if y ng for
+  imports: [ CommonModule, NgIf, NgFor, RouterModule],
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.css'
 })
