@@ -1,28 +1,52 @@
 <div class="component">
-    <p class="text-center">Carrera 💼</p>
-    <div class="row">
-
-        <div class="col-lg-6 col-sm-12">
-            <p>Área profesional <br> 2019-Actualmente </p>
-            <div class="col">   
-                <div>
-
-                </div>
-            </div>
-            
-
-        </div>
-        <div class="col-lg-6 col-sm-12">
-            <p>Área Académica <br> 2019-Actualmente </p>
-            <div class="col">
-                
-            </div>
-            
-        </div>
-
+  <p class="text-center">Carrera 💼</p>
+  <div class="row">
+    <div class="col-lg-6 col-sm-12">
+      <p>
+        Área profesional <br />
+        2019-Actualmente
+      </p>
+      <div class="items col">
+        <app-carrera-item [title]="'Gestor de proyectos de software'" 
+        [parrafo]="'Gestor de proyectos privados '"
+        [fecha]="'Septiembre/2022 ~ Mayo/2023'"
+        [duracion]="'9 meses'"/>
+        <app-carrera-item [title]="'Gestor de proyectos de software'" 
+        [parrafo]="'Gestor de proyectos privados '"
+        [fecha]="'Septiembre/2022 ~ Mayo/2023'"
+        [duracion]="'9 meses'" />
+        <app-carrera-item [title]="'Gestor de proyectos de software'" 
+        [parrafo]="'Gestor de proyectos privados '"
+        [fecha]="'Septiembre/2022 ~ Mayo/2023'"
+        [duracion]="'9 meses'"/>
+      </div>
     </div>
-
-
-
-
+    <div class="col-lg-6 col-sm-12">
+      <p>
+        Área Académica <br />
+        2019-Actualmente
+      </p>
+      <div class="items col">
+      <app-carrera-item  
+      [img]="'assets/educacion/udelQuindio.png'"
+      [title]="'Ingeniería de sistemas y computación'" 
+      [parrafo]="'Estudios de Ingeniería de sistemas y computación en la universidad del Quindío'"
+      [fecha]="'Enero/2019 ~ Actualmente'"
+      [duracion]="'5 años'"/>
+      <app-carrera-item  
+      [img]="'assets/educacion/google.png'"
+      [title]="'Gestión de proyectos de Google'" 
+      [parrafo]="'Certificado de Google en gestión de proyectos usando metodologías ágiles y waterfall'"
+      [fecha]="'Septiembre/2022 ~ Mayo/2023'"
+      [duracion]="'9 meses'"
+      />
+      <app-carrera-item 
+        [img]="'assets/educacion/english.png'"
+        [title]="'English B1'" 
+        [parrafo]="'Estudios básicos de Inglés en la academia fundadores de Pereira B1'"
+        [fecha]="'Enero/2019 ~ Mayo/2019'"
+        [duracion]="'5 meses'"/>
+    </div>
+    </div>
+  </div>
 </div>
