@@ -14,16 +14,27 @@
 
 .tec-cur {
     font-size: 40px;
-    color: rgb(213, 213, 213);
+    color: rgb(213, 213, 213, 0.8);
     
-    margin: 0 50px;
+    margin: 0  50px 30px 50px;
 }
 .tec-work{
     font-size: 40px;
-    color: rgb(213, 213, 213);
+    color: rgb(213, 213, 213, 0.8);
     margin-top: 200px;
     margin: 0 50px;
 }
+
+.tec-cur p{
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.tec-work p{
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
 
 i{
     color: rgb(213, 213, 213, 0.6);
