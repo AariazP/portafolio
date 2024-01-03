@@ -1,6 +1,7 @@
 import { Component, OnInit, signal } from '@angular/core';
 import {CommonModule, NgFor, NgIf} from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { IdiomaService } from '../../services/idioma.service';
 
 @Component({
   selector: 'app-nav',
@@ -11,17 +12,38 @@ import { RouterModule } from '@angular/router';
 })
 export class NavComponent implements OnInit{
 
-  isMediumScreen!:boolean;
+  isMediumScreen!:boolean; // variables para el responsive
   isSmallScreen!:boolean;
   isExtraSmallScreen!:boolean;
-  referencePoints!: string[];
+  
+  private idioma: string;
+  items!:string[];
 
-  constructor() {}
+
+  constructor(private _idioma:IdiomaService) {
+    this.idioma = _idioma.getIdioma();
+  }
+
+
+
+
+
 
   ngOnInit(): void {
     
     this.checkScreenSize();
     window.addEventListener('resize', () => this.checkScreenSize());
+
+    //Inicializamos el texto del nav
+    if(this.idioma === "ES")this.items = ["Inicio", "Sobre mi", "Portafolio", "Habilidades", "Carrera", "Contacto"];
+    else this.items = ["Home", "About me", "Portfolio", "Skills", "Career", "Contact"];
+    
+  
+  
+  
+  
+  
+  
 
   }
 
@@ -33,5 +55,9 @@ export class NavComponent implements OnInit{
 
   public getSize():number{
     return window.innerWidth;
+  }
+
+  getIdiomaLabel():string{
+    return this.idioma === "ES" ? "Idioma" : "Language";
   }
 }

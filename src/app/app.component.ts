@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import {NavComponent} from "./components/nav/nav.component";
@@ -10,6 +10,7 @@ import { HabilidadesComponent } from "./components/habilidades/habilidades.compo
 import { CarreraComponent } from "./components/carrera/carrera.component";
 import { RecomendacionesComponent } from "./components/recomendaciones/recomendaciones.component";
 import { FooterComponent } from './components/footer/footer.component';
+import { IdiomaService } from './services/idioma.service';
 
 
 @Component({
@@ -21,7 +22,15 @@ import { FooterComponent } from './components/footer/footer.component';
         DescComponent, ProyectosComponent, HabilidadesComponent, CarreraComponent, 
         RecomendacionesComponent, FooterComponent]
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
 
+    constructor( private idioma: IdiomaService){
+    }
+
+
+
+    ngOnInit(){
+        console.log(this.idioma.locale);
+    }
 
 }
