@@ -1,36 +1,45 @@
+<div class="div-trayectoria">
+    <h6 class="trayectoria">🚀Trayectoria</h6>  
+</div>
+
 <div class="component">
-  <p class="text-center">Carrera 💼</p>
+  <p class=" title text-center">Carrera 💼</p>
   <div class="row">
     <div class="col-lg-6 col-sm-12">
       <p>
-        Área profesional <br />
-        2019-Actualmente
+        <span class="subtitle">Área profesional</span> <br />
+        <span class="subtitle-time">2019-Actualmente</span>
       </p>
       <div class="items col">
-        <app-carrera-item [title]="'Gestor de proyectos de software'" 
-        [parrafo]="'Gestor de proyectos privados '"
+        <app-carrera-item [title]="'SINFOCI - grupo de investigación'" 
+        [img]="'assets/educacion/sinfoci.png'"
+        [parrafo]="' Grupo de investigación de la universidad del Quindío, donde se desarrollan proyectos a partir del paradigma MDD'"
         [fecha]="'Septiembre/2022 ~ Mayo/2023'"
         [duracion]="'9 meses'"/>
-        <app-carrera-item [title]="'Gestor de proyectos de software'" 
-        [parrafo]="'Gestor de proyectos privados '"
+
+        <app-carrera-item [title]="'Semillero de herramientas de software'" 
+        [img]="'assets/educacion/MDD.png'"
+        [parrafo]="'Diseño y desarrollo de herramientas de software para incrementar la productividad'"
         [fecha]="'Septiembre/2022 ~ Mayo/2023'"
         [duracion]="'9 meses'" />
-        <app-carrera-item [title]="'Gestor de proyectos de software'" 
+
+        <app-carrera-item [title]="'Administrador de sistema de información'" 
+        [img]="'assets/educacion/sis.jpg'"
         [parrafo]="'Gestor de proyectos privados '"
         [fecha]="'Septiembre/2022 ~ Mayo/2023'"
         [duracion]="'9 meses'"/>
       </div>
     </div>
     <div class="col-lg-6 col-sm-12">
-      <p>
-        Área Académica <br />
-        2019-Actualmente
+      <p class="academia">
+        <span class="subtitle"> Área Académica </span><br />
+        <span class="subtitle-time">2019-Actualmente</span>
       </p>
       <div class="items col">
       <app-carrera-item  
       [img]="'assets/educacion/udelQuindio.png'"
       [title]="'Ingeniería de sistemas y computación'" 
-      [parrafo]="'Estudios de Ingeniería de sistemas y computación en la universidad del Quindío'"
+      [parrafo]="' Estudios de Ingeniería de sistemas y computación en la universidad del Quindío, estudios profesionales en el área de la informática'"
       [fecha]="'Enero/2019 ~ Actualmente'"
       [duracion]="'5 años'"/>
       <app-carrera-item  

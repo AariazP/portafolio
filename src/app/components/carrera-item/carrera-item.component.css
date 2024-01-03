@@ -34,17 +34,23 @@ h5{
 
 img{
     max-width: 100%;
-    max-height: 800px;
-    margin: auto;
+    max-height: 300px;
+    object-fit: cover; 
 }
 
 .row{
     margin-bottom: 10px;
 }
 
+.fecha{
+    font-size: 15px;
+    justify-content: start;
+    color: rgb(213,213,213,0.5);
+}
 
 @media screen and (max-width: 600px) {
- 
+    
+    
     
     .row{
         font-size: small;

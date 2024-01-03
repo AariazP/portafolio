@@ -13,4 +13,49 @@
     justify-content: center;
     text-align: center;
 }
+.title{
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 60px;
+}
 
+
+.subtitle{
+    font-size: 40px;
+    font-weight: 400;
+    color: rgb(213,213,213, 0.7);
+}
+
+.subtitle-time{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(213,213,213, 0.5);
+}
+
+.trayectoria{
+    margin-left: 100px;
+    margin-top: 50px;
+    background-color: rgb(123,74,226,0.1);
+    border-radius: 10px;
+    color: rgb(123,74,226);
+    font-size: 30px;
+    display: inline-block;
+
+}
+@media screen and (max-width: 991px) {
+    .div-trayectoria{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin: auto;
+       
+    }
+    .academia{
+        margin-top: 30px;
+    }
+    .trayectoria{
+        margin: auto;
+        margin-top: 30px;
+    }
+
+}

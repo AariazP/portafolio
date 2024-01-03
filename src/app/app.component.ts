@@ -8,6 +8,8 @@ import { DescComponent } from "./components/desc/desc.component";
 import { ProyectosComponent } from "./components/proyectos/proyectos.component";
 import { HabilidadesComponent } from "./components/habilidades/habilidades.component";
 import { CarreraComponent } from "./components/carrera/carrera.component";
+import { RecomendacionesComponent } from "./components/recomendaciones/recomendaciones.component";
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @Component({
@@ -15,7 +17,9 @@ import { CarreraComponent } from "./components/carrera/carrera.component";
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [CommonModule, RouterOutlet, NavComponent, HomeComponent, SobremiComponent, DescComponent, ProyectosComponent, HabilidadesComponent, CarreraComponent]
+    imports: [CommonModule, RouterOutlet, NavComponent, HomeComponent, SobremiComponent, 
+        DescComponent, ProyectosComponent, HabilidadesComponent, CarreraComponent, 
+        RecomendacionesComponent, FooterComponent]
 })
 export class AppComponent {
 

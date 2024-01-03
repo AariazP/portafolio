@@ -1,0 +1,119 @@
+
+a{
+    color: rgb(213,213,213,0.8);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.correo{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paste{
+    font-size: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clip{
+    font-size: 30px;
+    color: rgb(213,213,213,0.8);
+    cursor: pointer;
+}
+
+
+.contacto{
+    margin-left: 100px;
+    margin-top: 50px;
+    background-color: rgb(123,74,226,0.1);
+    border-radius: 10px;
+    color: rgb(123,74,226);
+    font-size: 30px;
+    display: inline-block;
+
+}
+@media screen and (max-width: 991px) {
+    .div-contacto{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin: auto;
+       
+    }
+    .contacto{
+        margin: auto;
+        margin-top: 30px;
+    }
+
+}
+
+.div-correo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+
+.div-correo i{
+    font-size: 30px;
+    color: rgb(213,213,213,0.8);
+}
+
+.div-correo p{
+    font-size: 20px;
+    color: rgb(123,74,226);
+}
+
+.correo-paste{
+    margin-top: 30px;
+}
+
+.ir-inicio{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(213,213,213,0.8);
+    
+}
+
+.ir-inicio i{
+    
+    color: rgb(213,213,213,0.8);
+    cursor: pointer;
+}
+
+.ir-inicio p, h6{
+    font-size: 20px;
+}
+
+footer{
+    background-color: rgb(123,74,226, 0.1);
+    height: 50px;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.copy{
+    color: rgb(213,213,213,0.4);
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(213,213,213,0.4);
+    margin-top: 15px;
+}
