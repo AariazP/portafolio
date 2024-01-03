@@ -1,46 +1,26 @@
 <div>
-
-
-    <div class="div-contacto">
-        <h6 class="contacto">🗣️Contacto</h6>  
-    </div>
-
-    <div class="row div-correo">
-
-        <i class="bi bi-send text-center"></i>
-        <p class="text-center">Correo</p>
-
-    </div>
-
-    <div class="correo-paste">
-        <div class="row ">
-            <a href="mailto:alejo17ariazpzn@gmail.com" class="text-center">{{correo}}</a>
-        </div>
-        <div class="paste">
-            <i class="bi bi-clipboard clip" (click)="copiar()" ></i>
-        </div>
-    </div>
-
-
-    <div class="row ir-inicio">
-        <h6 class="text-center"> Volver al inicio <i class="bi bi-arrow-bar-up" (click)="irInicio()"></i></h6>
-    </div>
-</div>
-
-
-<footer>
+  <div class="div-contacto">
+    <h6 class="contacto">🗣️Contacto</h6>
+  </div>
+  <div class="correo-paste">
     <div class="row">
-        <div class="col-auto">
-            <p class="copy">Copyright © Alejandro Arias • 2023</p>
-        </div>
-        <div class="col-auto">
-            <a href="https://www.linkedin.com/in/alejandro-arias-0b0b3a1b2/" target="_blank" class="icono"><i class="redes bi bi-linkedin"></i></a>
-        </div>
-        <div class="col-auto">
-            <a href="https://github.com/AariazP" target="_blank"><i class="redes bi bi-github"></i></a>
-        </div>
-
+      <a href="mailto:alejo17ariazpzn@gmail.com" class="text-center">{{
+        correo
+      }}</a>
     </div>
-</footer>
+    <div class="paste">
+      <i class="bi bi-clipboard clip" (click)="copiar()"></i>
+    </div>
+  </div>
 
-
+  <div class="row ir-inicio">
+    <h6 class="text-center">
+      Volver al inicio <i class="bi bi-arrow-bar-up" (click)="irInicio()"></i>
+    </h6>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <p class="copy text-center">Copyright © Alejandro Arias • 2023</p>
+    </div>
+  </div>
+</div>
