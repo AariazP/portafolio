@@ -2,11 +2,11 @@
 
     <div class="col-12 col-md-4 text-center">
         <div class="saludo justify-content-start">
-            <h6>👋🏻Hola!</h6>
+            <h6> {{'HOME.SALUDO' | translate}}</h6>
         </div>
         <div class="justify-content-start">
-            <h1>Soy Alejandro Arias</h1>
-            <h6 class="subtitle">Ingeniero de sistemas - Gerente de proyectos</h6>
+            <h1>{{'HOME.NOMBRE' | translate}}</h1>
+            <h6 class="subtitle">{{'HOME.DESCRIPCION' | translate}}</h6>
             <a href="https://www.linkedin.com/in/jos%C3%A9-alejandro-arias-pinz%C3%B3n-20253a24a/" target="_blank" ><i class="redes bi bi-linkedin"></i></a>
             <a href="https://github.com/AariazP" target="_blank"><i class="redes bi bi-github"></i></a>
             <a href="https://www.youtube.com/@Ariaz_/videos" target="_blank"><i class="redes bi bi-youtube"></i></a>
@@ -19,8 +19,8 @@
 
     <div class="col-12 col-md-3 text-center">
 
-        <h6 class="cv" (click)="descargarCV()">Descargar cv <i class="bi bi-arrow-bar-down"></i></h6>
-        <button class="btn btn-conversemos" (click)="irWhatsApp()"><i class="bi bi-whatsapp"></i>  Vamos a conversar</button>
+        <h6 class="cv" (click)="descargarCV()">{{'HOME.DOWNLOAD' | translate}}<i class="bi bi-arrow-bar-down"></i></h6>
+        <button class="btn btn-conversemos" (click)="irWhatsApp()"><i class="bi bi-whatsapp"></i> {{'HOME.HABLEMOS' | translate}}</button>
 
     </div>
 </div>

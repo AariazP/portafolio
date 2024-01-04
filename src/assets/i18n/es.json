@@ -8,6 +8,28 @@
         "ITEM_5": "Contacto",
         "ITEM_6": "Idioma"
 
+    },
+    "HOME":{
+        "SALUDO": "👋🏻Hola!",
+        "NOMBRE": "Soy Alejandro Arias",
+        "DESCRIPCION": "Ingeniero de sistemas - Gerente de proyectos",
+        "HABLEMOS":" Vamos a conversar",
+        "DOWNLOAD": "Descargar CV"
+    },
+    "SOBREMI":{
+        "TITLE_1":"3 años como",
+        "SUBTITLE_1":"Programador",
+        "TITLE_2":"4 años de",
+        "SUBTITLE_2":"Trabajo",
+        "TITLE_3":"1 año como",
+        "SUBTITLE_3":"Gerente de proyectos",
+        "DESCRIPCION_1":"Desarrollador",
+        "DESCRIPCION_1.1":"Fullstack",
+        "DESCRIPCION_2":"Multiples proyectos y",
+        "DESCRIPCION_2.1":"Experiencias",
+        "DESCRIPCION_3":"Metodologías",
+        "DESCRIPCION_3.1":"Ágiles"
+
     }
   }
   

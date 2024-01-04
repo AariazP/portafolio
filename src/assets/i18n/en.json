@@ -8,6 +8,14 @@
         "ITEM_5": "Contact",
         "ITEM_6": "Language"
 
+    },
+    "HOME":{
+        "SALUDO": "👋🏻Hi!",
+        "NOMBRE": "I'm Alejandro Arias",
+        "DESCRIPCION": "Sytems enginner - Project manager",
+        "HABLEMOS":" Let's to talk",
+        "DOWNLOAD":"Download CV"
     }
+
   }
   

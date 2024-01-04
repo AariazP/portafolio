@@ -13,6 +13,7 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class NavComponent implements OnInit {
 
+
   isMediumScreen!: boolean; // variables para el responsive
   isSmallScreen!: boolean;
   isExtraSmallScreen!: boolean;
@@ -22,7 +23,7 @@ export class NavComponent implements OnInit {
     translate.addLangs(['en', 'es']);
     translate.setDefaultLang('en');
     const browserLang = translate.getBrowserLang();
-    //translate.use(browserLang?.match(/en|es/) ? browserLang : 'en');
+    translate.use(browserLang?.match(/en|es/) ? browserLang : 'en');
 
   }
 
@@ -39,6 +40,10 @@ export class NavComponent implements OnInit {
 
   public getSize(): number {
     return window.innerWidth;
+  }
+
+  cambiarIdioma(lang: string) {
+    this.translate.use(lang);
   }
   
 }
