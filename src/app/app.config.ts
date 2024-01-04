@@ -4,6 +4,8 @@ import { ApplicationConfig, importProvidersFrom } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { routes } from './app.routes';
+import { RouterModule } from '@angular/router';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -28,5 +30,12 @@ export const appConfig: ApplicationConfig = {
         },
       })
     ),
+    importProvidersFrom(
+    RouterModule.forRoot(routes, {
+      onSameUrlNavigation: "ignore",
+      anchorScrolling:'enabled',
+      scrollPositionRestoration: 'enabled',
+      useHash: true
+    })),
   ],
 };

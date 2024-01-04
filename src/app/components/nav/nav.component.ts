@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { TranslateModule } from '@ngx-translate/core';
 
+
 @Component({
   selector: 'app-nav',
   standalone: true,
@@ -46,4 +47,6 @@ export class NavComponent implements OnInit {
     this.translate.use(lang);
   }
   
+  
+
 }

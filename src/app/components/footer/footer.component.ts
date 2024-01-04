@@ -1,4 +1,4 @@
-import { Component,Renderer2 } from '@angular/core';
+import { Component,ElementRef,OnInit,Renderer2 } from '@angular/core';
 import { ClipboardModule } from 'ngx-clipboard';
 import { ClipboardService } from 'ngx-clipboard';
 import { TranslateService } from '@ngx-translate/core';
@@ -11,9 +11,10 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.css'
 })
-export class FooterComponent {
+export class FooterComponent{
 
-  constructor(private clipboardService: ClipboardService, public translate:TranslateService) { }
+  constructor(private clipboardService: ClipboardService, public translate:TranslateService, private el: ElementRef) { }
+
 
   correo: string = "alejo17ariazpzn@gmail.com";
 
