@@ -10,7 +10,6 @@ import { HabilidadesComponent } from "./components/habilidades/habilidades.compo
 import { CarreraComponent } from "./components/carrera/carrera.component";
 import { RecomendacionesComponent } from "./components/recomendaciones/recomendaciones.component";
 import { FooterComponent } from './components/footer/footer.component';
-import { IdiomaService } from './services/idioma.service';
 
 
 @Component({
@@ -24,13 +23,13 @@ import { IdiomaService } from './services/idioma.service';
 })
 export class AppComponent implements OnInit{
 
-    constructor( private idioma: IdiomaService){
+    constructor(){
     }
 
 
 
     ngOnInit(){
-        console.log(this.idioma.locale);
+    
     }
 
 }
