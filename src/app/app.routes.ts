@@ -1,10 +1,4 @@
 import { Routes } from '@angular/router';
 import { HabilidadesComponent } from './components/habilidades/habilidades.component';
 
-export const routes: Routes = [
-    {
-        path: '/contact',
-        component: HabilidadesComponent,
-    }
-
-];
+export const routes: Routes = [];

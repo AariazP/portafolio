@@ -1,0 +1,104 @@
+{
+    "NAV": {
+        "ITEM_0": "首页",
+        "ITEM_1": "关于我",
+        "ITEM_2": "作品集",
+        "ITEM_3": "技能",
+        "ITEM_4": "职业生涯",
+        "ITEM_5": "联系方式",
+        "ITEM_6": "语言"
+    },
+    "HOME": {
+        "SALUDO": "👋🏻你好！",
+        "NOMBRE": "我是亚历杭德罗·阿里亚斯",
+        "DESCRIPCION": "系统工程师 - 项目经理",
+        "HABLEMOS": "让我们聊一聊",
+        "DOWNLOAD": "下载简历"
+    },
+    "SOBREMI": {
+        "TITLE_1": "作为程序员的3年",
+        "SUBTITLE_1": "程序员",
+        "TITLE_2": "工作的4年",
+        "SUBTITLE_2": "工作",
+        "TITLE_3": "作为项目经理的1年",
+        "SUBTITLE_3": "项目经理",
+        "DESCRIPCION_1": "全栈开发者",
+        "DESCRIPCION_1.1": "开发人员",
+        "DESCRIPCION_2": "多个项目和",
+        "DESCRIPCION_2.1": "经验",
+        "DESCRIPCION_3": "敏捷方法",
+        "DESCRIPCION_3.1": "敏捷方法"
+    },
+    "DESC": {
+        "TITLE": "🧐 关于我",
+        "NAME": "何塞·亚历杭德罗·阿里亚斯",
+        "DESCRIPCION_1": "👨‍💻 有丰富经验的软件开发者，具有分析和开发信息系统的经验。 熟练掌握Java ☕️，并有使用Spring Boot 🍃等技术开发信息系统的经验。",
+        "DESCRIPCION_2": "🔧 在软件开发、应用集成和使用多种编程语言（包括Java、TypeScript、CSS和HTML）进行流程自动化方面有着强大的技能。",
+        "DESCRIPCION_3": "⚙️ 精通使用Scrum 🔄 和Kanban 📋等敏捷方法，有使用持续集成等方法的经验。 熟练使用Confluence等软件工具进行文档编写。 🗒️ 自由软件的倡导者。 🌐",
+        "DESCRIPCION_4": "🚀 注重保持与最新技术进展同步，我具有分析能力、创造力，学习速度快，并具有导师思维。 👨‍🏫 我对技术和应用开发充满热情，始终努力提供最佳结果。"
+    },
+    "PROYECTOS": {
+        "SUBTITLE": "🔗 作品集",
+        "TITLE": "🦾 作品和项目",
+        "TEXT_BUTTON": "在Github上查看",
+        "TITLE_1": "学校",
+        "DESCRIPCION_1": "交互式项目，在其中实时生成学生、教师和管理员的图表",
+        "TITLE_2": "诊所",
+        "DESCRIPCION_2": "互动诊所项目，管理约会、医生、患者和用户的系统，具有登录和注册系统。",
+        "TITLE_3": "诊所后端",
+        "DESCRIPCION_3": "后端项目，使用mysql和spring boot为诊所项目提供rest服务。",
+        "TITLE_4": "Mercadolibre网站爬虫",
+        "DESCRIPCION_4": "Web爬虫项目，从Mercadolibre提取任何产品和任何国家的数据",
+        "TITLE_5": "WiFi网络攻击",
+        "DESCRIPCION_5": "WiFi网络暴力破解项目，使用Java和aircrack-ng库",
+        "TITLE_6": "设计模式",
+        "DESCRIPCION_6": "介绍创建性、结构性和行为性设计模式的项目"
+    },
+    "HABILIDADES": {
+        "TITLE": "👨🏻‍💻 技能",
+        "SUBTITLE_1": "我日常使用的技术",
+        "SUBTITLE_2": "我曾经使用过的技术"
+    },
+    "CARRERA": {
+        "TRAYECTORIA": "🚀 职业轨迹",
+        "TITLE": "职业 💼",
+        "SUBTITLE_1": "专业领域",
+        "SUBTITLE_1.1": "2014-2019",
+        "SUBTITLE_2": "学术领域",
+        "SUBTITLE_2.2": "2019-至今"
+    },
+    "CARRERA-ITEM": {
+        "TITLE_1": "SINFOCI - 研究小组",
+        "DESCRIPCION_1": "Quindío大学的研究小组，致力于从MDD（模型驱动开发）范例出发开发项目",
+        "TIME_1": "2022年9月 ~ 2023年5月",
+        "DURATION_1": "9个月",
+
+        "TITLE_2": "软件工具种子项目",
+        "DESCRIPCION_2": "设计和开发软件工具以提高生产力",
+        "TIME_2": "2022年9月 ~ 2023年5月",
+        "DURATION_2": "9个月",
+
+        "TITLE_3": "信息系统管理员",
+        "DESCRIPCION_3": "私人项目管理者",
+        "TIME_3": "2021年6月 ~ 2022年7月",
+        "DURATION_3": "13个月",
+
+        "TITLE_4": "系统工程与计算机科学",
+        "DESCRIPCION_4": "Quindío大学的系统工程与计算机科学学习，专业领域是信息技术。",
+        "TIME_4": "2019年1月 ~ 至今",
+        "DURATION_4": "5年",
+        "TITLE_5": "Google项目管理",
+        "DESCRIPCION_5": "Google项目管理认证，使用敏捷和瀑布等方法",
+        "TIME_5": "2022年5月 ~ 2023年10月",
+        "DURATION_5": "5个月",
+    
+        "TITLE_6": "英语B1",
+        "DESCRIPCION_6": "在Pereira B1创始人学院进行的英语基础课程",
+        "TIME_6": "2019年1月 ~ 2019年5月",
+        "DURATION_6": "5个月"
+    },
+    "FOOTER": {
+        "TITLE": "📞 联系方式",
+        "IR-INICIO": "返回首页"
+    }
+}    

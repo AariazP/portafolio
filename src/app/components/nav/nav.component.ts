@@ -21,10 +21,12 @@ export class NavComponent implements OnInit {
 
   constructor(public translate: TranslateService) {
 
-    translate.addLangs(['en', 'es']);
+    translate.addLangs(['en', 'es', 'zh']);
     translate.setDefaultLang('en');
     const browserLang = translate.getBrowserLang();
     translate.use(browserLang?.match(/en|es/) ? browserLang : 'en');
+    //muestro por consola todos los idiomas disponibles
+    
 
   }
 
