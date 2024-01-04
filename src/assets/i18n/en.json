@@ -7,15 +7,99 @@
         "ITEM_4": "Career",
         "ITEM_5": "Contact",
         "ITEM_6": "Language"
-
     },
-    "HOME":{
+    "HOME": {
         "SALUDO": "👋🏻Hi!",
         "NOMBRE": "I'm Alejandro Arias",
-        "DESCRIPCION": "Sytems enginner - Project manager",
-        "HABLEMOS":" Let's to talk",
-        "DOWNLOAD":"Download CV"
-    }
+        "DESCRIPCION": "Systems Engineer - Project Manager",
+        "HABLEMOS": "Let's talk",
+        "DOWNLOAD": "Download CV"
+    },
+    "SOBREMI": {
+        "TITLE_1": "3 years as",
+        "SUBTITLE_1": "Programmer",
+        "TITLE_2": "4 years of",
+        "SUBTITLE_2": "Work",
+        "TITLE_3": "1 year as",
+        "SUBTITLE_3": "Project Manager",
+        "DESCRIPCION_1": "Developer",
+        "DESCRIPCION_1.1": "Fullstack",
+        "DESCRIPCION_2": "Multiple projects and",
+        "DESCRIPCION_2.1": "Experiences",
+        "DESCRIPCION_3": "Methodologies",
+        "DESCRIPCION_3.1": "Agile"
+    },
+    "DESC": {
+        "TITLE": "🧐 About me",
+        "NAME": "José Alejandro Arias",
+        "DESCRIPCION_1": "👨‍💻 Experienced software developer, with expertise in analysis and development of information systems. Proficient in Java ☕️ and experienced in developing information systems using technologies like Spring Boot 🍃.",
+        "DESCRIPCION_2": "🔧 Strong skills in software development, application integration, and process automation using various programming languages, including Java, TypeScript, CSS, and HTML.",
+        "DESCRIPCION_3": "⚙️ Expert in using agile methodologies like Scrum 🔄 and Kanban 📋, and experienced in continuous integration 🔄. Proficient in using software tools like Confluence for documentation. 🗒️ Advocate for open-source software. 🌐",
+        "DESCRIPCION_4": "🚀 Focused on staying up-to-date with the latest technological advancements, I am analytical, creative, quick learner, and have a mentor mindset. 👨‍🏫 Passionate about technology and application development, always striving to deliver the best results."
+    },
+    "PROYECTOS": {
+        "SUBTITLE": "🔗Portfolio",
+        "TITLE": "🦾Work and Projects",
+        "TEXT_BUTTON": "View on Github",
+        "TITLE_1": "School",
+        "DESCRIPCION_1": "Interactive project generating real-time graphics of students, teachers, and administrators.",
+        "TITLE_2": "Clinic",
+        "DESCRIPCION_2": "Interactive clinic project managing appointments, doctors, patients, and user login and registration system.",
+        "TITLE_3": "Clinic Backend",
+        "DESCRIPCION_3": "Backend project exposing REST services for a clinic project, using a MySQL database and Spring Boot.",
+        "TITLE_4": "Mercadolibre Scraper",
+        "DESCRIPCION_4": "Web scraping project extracting data from Mercadolibre for any product and country.",
+        "TITLE_5": "WiFi Network Attack",
+        "DESCRIPCION_5": "Brute force WiFi network attack project using Java and the aircrack-ng library.",
+        "TITLE_6": "Design Patterns",
+        "DESCRIPCION_6": "Project explaining creational, structural, and behavioral design patterns."
+    },
+    "HABILIDADES": {
+        "TITLE": "👨🏻‍💻Skills",
+        "SUBTITLE_1": "Technologies I use on a daily basis",
+        "SUBTITLE_2": "Technologies I have worked with"
+    },
+    "CARRERA": {
+        "TRAYECTORIA": "🚀Career",
+        "TITLE": "Career 💼",
+        "SUBTITLE_1": "Professional Area",
+        "SUBTITLE_1.1": "2021-2019",
+        "SUBTITLE_2": "Academic Area",
+        "SUBTITLE_2.2": "2019-Present"
+    },
+    "CARRERA-ITEM": {
+        "TITLE_1": "SINFOCI - Research Group",
+        "DESCRIPCION_1": "University of Quindío research group, developing projects using the MDD (Model Driven Development) paradigm.",
+        "TIME_1": "September/2022 ~ May/2023",
+        "DURATION_1": "9 months",
 
-  }
-  
+        "TITLE_2": "Software Tools Seedbed",
+        "DESCRIPCION_2": "Design and development of software tools to increase productivity.",
+        "TIME_2": "September/2022 ~ May/2023",
+        "DURATION_2": "9 months",
+
+        "TITLE_3": "Information System Administrator",
+        "DESCRIPCION_3": "Private project manager.",
+        "TIME_3": "June/2021 ~ July/2022",
+        "DURATION_3": "13 months",
+
+        "TITLE_4": "Systems and Computing Engineering",
+        "DESCRIPCION_4": "Studies in Systems and Computing Engineering at the University of Quindío, professional studies in the field of computing.",
+        "TIME_4": "January/2019 ~ Present",
+        "DURATION_4": "5 years",
+
+        "TITLE_5": "Google Project Management",
+        "DESCRIPCION_5": "Google certified in project management using agile and waterfall methodologies.",
+        "TIME_5": "May/2022 ~ October/2023",
+        "DURATION_5": "5 months",
+
+        "TITLE_6": "English B1",
+        "DESCRIPCION_6": "Basic English studies at the Fundadores de Pereira B1 academy.",
+        "TIME_6": "January/2019 ~ May/2019",
+        "DURATION_6": "5 months"
+    },
+    "FOOTER": {
+        "TITLE": "📞 Contact",
+        "IR-INICIO": "Back to home"
+    }
+}

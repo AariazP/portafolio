@@ -1,60 +1,60 @@
 <div class="div-trayectoria">
-    <h6 class="trayectoria">🚀Trayectoria</h6>  
+    <h6 class="trayectoria">{{'CARRERA.TRAYECTORIA' | translate }}</h6>  
 </div>
 
 <div class="component">
-  <p class=" title text-center">Carrera 💼</p>
+  <p class=" title text-center">{{'CARRERA.TITLE' | translate }}</p>
   <div class="row">
     <div class="col-lg-6 col-sm-12">
       <p>
-        <span class="subtitle">Área profesional</span> <br />
-        <span class="subtitle-time">2019-Actualmente</span>
+        <span class="subtitle">{{'CARRERA.SUBTITLE_1' | translate }}</span> <br />
+        <span class="subtitle-time">{{'CARRERA.SUBTITLE_1.1' | translate }}</span>
       </p>
       <div class="items col">
-        <app-carrera-item [title]="'SINFOCI - grupo de investigación'" 
+        <app-carrera-item [title]="'CARRERA-ITEM.TITLE_1' | translate" 
         [img]="'assets/educacion/sinfoci.png'"
-        [parrafo]="' Grupo de investigación de la universidad del Quindío, donde se desarrollan proyectos a partir del paradigma MDD'"
-        [fecha]="'Septiembre/2022 ~ Mayo/2023'"
-        [duracion]="'9 meses'"/>
+        [parrafo]="'CARRERA-ITEM.DESCRIPCION_1' | translate"
+        [fecha]="'CARRERA-ITEM.TIME_1' | translate "
+        [duracion]="'CARRERA-ITEM.DURATION_1' | translate"/>
 
-        <app-carrera-item [title]="'Semillero de herramientas de software'" 
+        <app-carrera-item [title]="'CARRERA-ITEM.TITLE_2' | translate" 
         [img]="'assets/educacion/MDD.png'"
-        [parrafo]="'Diseño y desarrollo de herramientas de software para incrementar la productividad'"
-        [fecha]="'Septiembre/2022 ~ Mayo/2023'"
-        [duracion]="'9 meses'" />
+        [parrafo]="'CARRERA-ITEM.DESCRIPCION_2' | translate"
+        [fecha]="'CARRERA-ITEM.TIME_2' | translate "
+        [duracion]="'CARRERA-ITEM.DURATION_2' | translate" />
 
-        <app-carrera-item [title]="'Administrador de sistema de información'" 
+        <app-carrera-item [title]="'CARRERA-ITEM.TITLE_3' | translate" 
         [img]="'assets/educacion/sis.jpg'"
-        [parrafo]="'Gestor de proyectos privados '"
-        [fecha]="'Septiembre/2022 ~ Mayo/2023'"
-        [duracion]="'9 meses'"/>
+        [parrafo]="'CARRERA-ITEM.DESCRIPCION_3' | translate"
+        [fecha]="'CARRERA-ITEM.TIME_3' | translate "
+        [duracion]="'CARRERA-ITEM.DURATION_3' | translate"/>
       </div>
     </div>
     <div class="col-lg-6 col-sm-12">
       <p class="academia">
-        <span class="subtitle"> Área Académica </span><br />
-        <span class="subtitle-time">2019-Actualmente</span>
+        <span class="subtitle"> {{'CARRERA.SUBTITLE_2' | translate }}</span><br />
+        <span class="subtitle-time">{{'CARRERA.SUBTITLE_2.2' | translate }}</span>
       </p>
       <div class="items col">
       <app-carrera-item  
       [img]="'assets/educacion/udelQuindio.png'"
-      [title]="'Ingeniería de sistemas y computación'" 
-      [parrafo]="' Estudios de Ingeniería de sistemas y computación en la universidad del Quindío, estudios profesionales en el área de la informática'"
-      [fecha]="'Enero/2019 ~ Actualmente'"
-      [duracion]="'5 años'"/>
+      [title]="'CARRERA-ITEM.TITLE_4' | translate" 
+      [parrafo]="' CARRERA-ITEM.DESCRIPCION_4' | translate "
+      [fecha]="'CARRERA-ITEM.TIME_4' | translate "
+      [duracion]="'CARRERA-ITEM.DURATION_4' | translate"/>
       <app-carrera-item  
       [img]="'assets/educacion/google.png'"
-      [title]="'Gestión de proyectos de Google'" 
-      [parrafo]="'Certificado de Google en gestión de proyectos usando metodologías ágiles y waterfall'"
-      [fecha]="'Septiembre/2022 ~ Mayo/2023'"
-      [duracion]="'9 meses'"
+      [title]="'CARRERA-ITEM.TITLE_5' | translate" 
+      [parrafo]="'CARRERA-ITEM.DESCRIPCION_5' | translate"
+      [fecha]="'CARRERA-ITEM.TIME_5' | translate "
+      [duracion]="'CARRERA-ITEM.DURATION_5' | translate"/>
       />
       <app-carrera-item 
         [img]="'assets/educacion/english.png'"
-        [title]="'English B1'" 
-        [parrafo]="'Estudios básicos de Inglés en la academia fundadores de Pereira B1'"
-        [fecha]="'Enero/2019 ~ Mayo/2019'"
-        [duracion]="'5 meses'"/>
+        [title]="'CARRERA-ITEM.TITLE_6' | translate" 
+        [parrafo]="'CARRERA-ITEM.DESCRIPCION_6' | translate"
+        [fecha]="'CARRERA-ITEM.TIME_6' | translate "
+        [duracion]="'CARRERA-ITEM.DURATION_6' | translate"/>
     </div>
     </div>
   </div>

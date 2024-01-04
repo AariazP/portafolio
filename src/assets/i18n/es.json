@@ -29,7 +29,86 @@
         "DESCRIPCION_2.1":"Experiencias",
         "DESCRIPCION_3":"Metodologías",
         "DESCRIPCION_3.1":"Ágiles"
+    },
+    "DESC":{
+        "TITLE":"🧐 Sobre mi",
+        "NAME":"José Alejandro Arias",
+        "DESCRIPCION_1": "👨‍💻 Desarrollador de software experimentado, con experiencia en análisis y desarrollo de sistemas de información.  Competente en Java ☕️ y experiencia en el desarrollo de sistemas de información utilizando tecnologías como Spring Boot 🍃.",
+        "DESCRIPCION_2": "🔧 Fuertes habilidades en desarrollo de software, integración de aplicaciones y automatización de procesos utilizando varios lenguajes de programación, incluidos Java, TypeScript, CSS y HTML.",
+        "DESCRIPCION_3": "⚙️ Experto en el uso de metodologías ágiles como Scrum 🔄 y Kanban 📋, y experimentado en el uso de metodologías como la integración continua 🔄. Competente en el uso de herramientas de software como Confluence para la documentación. 🗒️ Defensor del software libre. 🌐",
+        "DESCRIPCION_4": "🚀 Centrado en mantenerme al día con los últimos avances tecnológicos, soy analítico, creativo, aprendo rápido y tengo una mentalidad de mentor. 👨‍🏫 Me apasiona la tecnología y el desarrollo de aplicaciones y siempre me esfuerzo por ofrecer los mejores resultados."
+    },
+    "PROYECTOS":{
+        "SUBTITLE":"🔗Portafolio",
+        "TITLE":"🦾Trabajos y proyectos",
+        "TEXT_BUTTON":"Ver en Github",
+        "TITLE_1":"Escuela",
+        "DESCRIPCION_1":"Proyecto interactivo, donde se generan graficas en tiempo real de estudiantes, profesores y administradores",
+        "TITLE_2":" Clínica ",
+        "DESCRIPCION_2": "Proyecto interactivo de una clínica, donde se administran citas, doctores, pacientes y usuarios sistema de login y registro,",
+        "TITLE_3":"Clínica backend",
+        "DESCRIPCION_3":"Proyecto backend donde se exponen servicios rest para el proyecto de una clinica, usando una base de datos en mysql y spring boot",
+        "TITLE_4":"Scrapper de mercadolibre",
+        "DESCRIPCION_4":"Proyecto de web scraping, donde se extraen datos de mercadolibre de cualquier producto y cualquier país",
+        "TITLE_5":"Ataque a redes WIFI",
+        "DESCRIPCION_5":"Proyecto de ataque de fuerza bruta a redes wifi, usando java y la libreria de aircrack-ng",
+        "TITLE_6":"Patrones de diseño",
+        "DESCRIPCION_6":"Proyecto donde se exlican los patrones de diseño creacionales, estructurales y de comportamiento"
+    },
+    "HABILIDADES":{
+        "TITLE":"👨🏻‍💻Habilidades",
+        "SUBTITLE_1":"Tecnologías que uso en el día a día",
+        "SUBTITLE_2":"Tecnologías con las que he trabajado"
+    },
+    "CARRERA":{
+        "TRAYECTORIA":"🚀Trayectoria",
+        "TITLE":"Carrera 💼",
+        "SUBTITLE_1":"Área profesional",
+        "SUBTITLE_1.1":"2014-2019 ",
+        "SUBTITLE_2":"Área Académica",
+        "SUBTITLE_2.2":"2019-Actualmente"
+    },
+    "CARRERA-ITEM":{
 
+        "TITLE_1": "SINFOCI - grupo de investigación",
+        "DESCRIPCION_1": "Grupo de investigación de la universidad del Quindío, donde se desarrollan proyectos a partir del paradigma MDD (Model Driven Development)",
+        "TIME_1":"Septiembre/2022 ~ Mayo/2023",
+        "DURATION_1":"9 meses",
+
+        "TITLE_2": "Semillero de herramientas de software",
+        "DESCRIPCION_2": "Diseño y desarrollo de herramientas de software para incrementar la productividad",
+        "TIME_2":"Septiembre/2022 ~ Mayo/2023",
+        "DURATION_2":"9 meses",
+
+        "TITLE_3": "Administrador de sistema de información",
+        "DESCRIPCION_3": "Gestor de proyectos privados",
+        "TIME_3":"Junio/2021 ~ Julio/2022",
+        "DURATION_3":"13 meses",
+
+        "TITLE_4": "Ingeniería de sistemas y computación",
+        "DESCRIPCION_4": "Estudios de Ingeniería de sistemas y computación en la universidad del Quindío, estudios profesionales en el área de la informática",
+        "TIME_4":"Enero/2019 ~ Actualmente",
+        "DURATION_4":"5 años",
+
+        "TITLE_5": "Gestión de proyectos de Google",
+        "DESCRIPCION_5": "Certificado de Google en gestión de proyectos usando metodologías ágiles y waterfall",
+        "TIME_5":"Mayo/2022 ~ Octubre/2023",
+        "DURATION_5":"5 meses",
+
+        "TITLE_6": "English B1",
+        "DESCRIPCION_6": "Estudios básicos de Inglés en la academia fundadores de Pereira B1",
+        "TIME_6":"Enero/2019 ~ Mayo/2019",
+        "DURATION_6":"5 meses"
+
+    },
+    "FOOTER":{
+        "TITLE":"📞 Contacto",
+        "IR-INICIO":"Volver al inicio"
     }
+
+
+
+
+
   }
   
