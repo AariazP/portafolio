@@ -17,7 +17,7 @@ export class HomeComponent {
 
 
   irWhatsApp(): void {
-    const externalLink = 'https://w.app/jskdka'; 
+    const externalLink = 'https://wa.link/c3ev4p'; 
     window.open(externalLink, '_blank');
     console.log('irWhatsApp');
   }
