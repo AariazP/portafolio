@@ -68,15 +68,15 @@
         "SUBTITLE_2.2": "2019-Present"
     },
     "CARRERA-ITEM": {
-        "TITLE_1": "SINFOCI - Research Group",
-        "DESCRIPCION_1": "University of Quindío research group, developing projects using the MDD (Model Driven Development) paradigm.",
-        "TIME_1": "September/2022 ~ May/2023",
+        "TITLE_1": "GRID - Research Group",
+        "DESCRIPCION_1": "University of Quindío research group, developing projects lightvirtualization using docker, containerd, etc",
+        "TIME_1": "Agosto/2023 ~ Current",
         "DURATION_1": "9 months",
 
-        "TITLE_2": "Software Tools Seedbed",
+        "TITLE_2": "Container-based virtualization to GRID",
         "DESCRIPCION_2": "Design and development of software tools to increase productivity.",
         "TIME_2": "September/2022 ~ May/2023",
-        "DURATION_2": "9 months",
+        "DURATION_2": "22 months",
 
         "TITLE_3": "Information System Administrator",
         "DESCRIPCION_3": "Private project manager.",
