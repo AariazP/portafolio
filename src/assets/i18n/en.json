@@ -11,7 +11,7 @@
     "HOME": {
         "SALUDO": "Hi!",
         "NOMBRE": "I'm Alejandro Arias",
-        "DESCRIPCION": "Cloud Engineer \u2022 DevOps",
+        "DESCRIPCION": "Cloud Engineer \u2022 DevOps \u2022 AWS",
         "HABLEMOS": "Let's talk",
         "DOWNLOAD": "Download CV"
     },
@@ -19,9 +19,9 @@
         "TITLE_1": "3 years as",
         "SUBTITLE_1": "Cloud Engineer",
         "TITLE_2": "4 years of",
-        "SUBTITLE_2": "DevOps",
+        "SUBTITLE_2": "DevOps & Cloud",
         "TITLE_3": "1 year as",
-        "SUBTITLE_3": "Architect",
+        "SUBTITLE_3": "Solutions Architect",
         "DESCRIPCION_1": "Cloud & Infrastructure",
         "DESCRIPCION_1.1": "DevOps",
         "DESCRIPCION_2": "Multiple projects and",
@@ -32,10 +32,10 @@
     "DESC": {
         "TITLE": "About me",
         "NAME": "Jos\u00e9 Alejandro Arias",
-        "DESCRIPCION_1": "Cloud engineer focused on designing, implementing, and managing scalable infrastructure on AWS and Docker. Experienced in container orchestration, CI/CD pipelines, and infrastructure as code using Terraform and Ansible.",
-        "DESCRIPCION_2": "Strong background in software development and system integration, with expertise in Java, TypeScript, and Python. Passionate about automating workflows and building resilient cloud-native applications.",
-        "DESCRIPCION_3": "Proficient in Agile methodologies (Scrum, Kanban) and DevOps practices including continuous integration, delivery, and monitoring. Advocate for open-source tools and infrastructure automation.",
-        "DESCRIPCION_4": "Analytical, creative, and fast learner with a mentor mindset. Committed to staying current with emerging cloud technologies and best practices, always striving to deliver robust and efficient solutions."
+        "DESCRIPCION_1": "Systems engineer focused on cloud architecture and scalable data-driven solutions on AWS. Experienced in event-driven architectures using S3, Glue, Lambda, API Gateway, and Snowflake. Certified in Linux Essentials and Git Essential.",
+        "DESCRIPCION_2": "Strong expertise in software development and system integration with Java, Spring Boot, Angular, and TypeScript. Proficient in container orchestration with Kubernetes and Docker, CI/CD pipelines, and infrastructure as code.",
+        "DESCRIPCION_3": "Experienced in Agile methodologies (Scrum, Kanban) and DevOps practices including continuous integration and delivery. Knowledgeable in COBIT 2019, TDD, and MDD (Model Driven Development). Competent in project management tools like Asana and Confluence.",
+        "DESCRIPCION_4": "Analytical, creative, and fast learner committed to open-source software and emerging cloud technologies. Passionate about leveraging AI and automation to build robust, efficient solutions. Mentor mindset focused on team growth and knowledge sharing."
     },
     "PROYECTOS": {
         "SUBTITLE": "Portfolio",
@@ -56,42 +56,43 @@
     },
     "HABILIDADES": {
         "TITLE": "Skills",
-        "SUBTITLE_1": "Technologies I use on a daily basis",
-        "SUBTITLE_2": "Technologies I have worked with"
+        "SUBTITLE_1": "Cloud & Infrastructure",
+        "SUBTITLE_2": "Development & Methodologies",
+        "SUBTITLE_3": "Tools & Management"
     },
     "CARRERA": {
         "TRAYECTORIA": "Career",
         "TITLE": "Career",
-        "SUBTITLE_1": "Professional Area",
+        "SUBTITLE_1": "Professional Experience",
         "SUBTITLE_1.1": "Cloud & DevOps",
-        "SUBTITLE_2": "Academic Area",
+        "SUBTITLE_2": "Education & Certifications",
         "SUBTITLE_2.2": "Systems Engineering"
     },
     "CARRERA-ITEM": {
-        "TITLE_1": "GRID - Research Group",
-        "DESCRIPCION_1": "University of Quind\u00edo research group, developing projects lightvirtualization using docker, containerd, etc",
-        "TIME_1": "Agosto/2023 ~ Current",
-        "DURATION_1": "9 months",
-        "TITLE_2": "Container-based virtualization to GRID",
-        "DESCRIPCION_2": "Design and development of software tools to increase productivity.",
-        "TIME_2": "September/2022 ~ May/2023",
-        "DURATION_2": "22 months",
+        "TITLE_1": "Cloud Engineer at VCSOFT",
+        "DESCRIPCION_1": "Design and implementation of cloud-native solutions on AWS. Development of event-driven architectures using S3, Glue, Lambda, API Gateway, and Snowflake. Container orchestration with Kubernetes and Docker. Automation of CI/CD pipelines and infrastructure as code.",
+        "TIME_1": "2025 ~ Present",
+        "DURATION_1": "Current",
+        "TITLE_2": "GRID Research Group - University of Quind\u00edo",
+        "DESCRIPCION_2": "Research group focused on MDD (Model Driven Development) and virtualization projects using Docker and containerd. Development of software tools to increase productivity.",
+        "TIME_2": "2023 ~ 2025",
+        "DURATION_2": "2 years",
         "TITLE_3": "Information System Administrator",
-        "DESCRIPCION_3": "Private project manager.",
+        "DESCRIPCION_3": "Private project manager responsible for administration and management of information systems.",
         "TIME_3": "June/2021 ~ July/2022",
         "DURATION_3": "13 months",
         "TITLE_4": "Systems and Computing Engineering",
-        "DESCRIPCION_4": "Studies in Systems and Computing Engineering at the University of Quind\u00edo, professional studies in the field of computing.",
+        "DESCRIPCION_4": "Professional studies in Systems and Computing Engineering at the University of Quind\u00edo.",
         "TIME_4": "January/2019 ~ Present",
-        "DURATION_4": "5 years",
+        "DURATION_4": "5+ years",
         "TITLE_5": "Google Project Management",
         "DESCRIPCION_5": "Google certified in project management using agile and waterfall methodologies.",
         "TIME_5": "May/2022 ~ October/2023",
         "DURATION_5": "5 months",
-        "TITLE_6": "English B1",
-        "DESCRIPCION_6": "Basic English studies at the Fundadores de Pereira B1 academy.",
-        "TIME_6": "January/2019 ~ May/2019",
-        "DURATION_6": "5 months"
+        "TITLE_6": "Linux Essentials & Git Essential",
+        "DESCRIPCION_6": "Certifications in Linux Essentials and Git Essential, Alura Latam.",
+        "TIME_6": "2024",
+        "DURATION_6": "Certified"
     },
     "FOOTER": {
         "TITLE": "Contact",
