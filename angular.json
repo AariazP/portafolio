@@ -21,7 +21,11 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
+              {
+                "glob": "favicon.svg",
+                "input": "src/",
+                "output": "/"
+              },
               "src/assets"
             ],
             "styles": [
