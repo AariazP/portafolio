@@ -9,8 +9,11 @@ import { ScrollRevealDirective } from '../../directives/scroll-reveal.directive'
 })
 export class CarreraItemComponent {
   @Input() title!: string;
+  @Input() subtitle?: string;
   @Input() parrafo!: string;
+  @Input() skills?: string;
   @Input() fecha!: string;
   @Input() duracion!: string;
-  @Input() img!: string;
+  @Input() img?: string;
+  @Input() type: 'experience' | 'education' = 'experience';
 }
