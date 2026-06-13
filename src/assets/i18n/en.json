@@ -11,19 +11,19 @@
     "HOME": {
         "SALUDO": "Hi!",
         "NOMBRE": "I'm Alejandro Arias",
-        "DESCRIPCION": "Systems Engineer - Project Manager",
+        "DESCRIPCION": "Cloud Engineer \u2022 DevOps",
         "HABLEMOS": "Let's talk",
         "DOWNLOAD": "Download CV"
     },
     "SOBREMI": {
         "TITLE_1": "3 years as",
-        "SUBTITLE_1": "Programmer",
+        "SUBTITLE_1": "Cloud Engineer",
         "TITLE_2": "4 years of",
-        "SUBTITLE_2": "Work",
+        "SUBTITLE_2": "DevOps",
         "TITLE_3": "1 year as",
-        "SUBTITLE_3": "Project Manager",
-        "DESCRIPCION_1": "Developer",
-        "DESCRIPCION_1.1": "Fullstack",
+        "SUBTITLE_3": "Architect",
+        "DESCRIPCION_1": "Cloud & Infrastructure",
+        "DESCRIPCION_1.1": "DevOps",
         "DESCRIPCION_2": "Multiple projects and",
         "DESCRIPCION_2.1": "Experiences",
         "DESCRIPCION_3": "Methodologies",
@@ -31,11 +31,11 @@
     },
     "DESC": {
         "TITLE": "About me",
-        "NAME": "José Alejandro Arias",
-        "DESCRIPCION_1": "Experienced software developer, with expertise in analysis and development of information systems. Proficient in Java and experienced in developing information systems using technologies like Spring Boot.",
-        "DESCRIPCION_2": "Strong skills in software development, application integration, and process automation using various programming languages, including Java, TypeScript, CSS, and HTML.",
-        "DESCRIPCION_3": "Expert in using agile methodologies like Scrum and Kanban, and experienced in continuous integration. Proficient in using software tools like Confluence for documentation. Advocate for open-source software.",
-        "DESCRIPCION_4": "Focused on staying up-to-date with the latest technological advancements, I am analytical, creative, quick learner, and have a mentor mindset. Passionate about technology and application development, always striving to deliver the best results."
+        "NAME": "Jos\u00e9 Alejandro Arias",
+        "DESCRIPCION_1": "Cloud engineer focused on designing, implementing, and managing scalable infrastructure on AWS and Docker. Experienced in container orchestration, CI/CD pipelines, and infrastructure as code using Terraform and Ansible.",
+        "DESCRIPCION_2": "Strong background in software development and system integration, with expertise in Java, TypeScript, and Python. Passionate about automating workflows and building resilient cloud-native applications.",
+        "DESCRIPCION_3": "Proficient in Agile methodologies (Scrum, Kanban) and DevOps practices including continuous integration, delivery, and monitoring. Advocate for open-source tools and infrastructure automation.",
+        "DESCRIPCION_4": "Analytical, creative, and fast learner with a mentor mindset. Committed to staying current with emerging cloud technologies and best practices, always striving to deliver robust and efficient solutions."
     },
     "PROYECTOS": {
         "SUBTITLE": "Portfolio",
@@ -63,13 +63,13 @@
         "TRAYECTORIA": "Career",
         "TITLE": "Career",
         "SUBTITLE_1": "Professional Area",
-        "SUBTITLE_1.1": "2021-2019",
+        "SUBTITLE_1.1": "Cloud & DevOps",
         "SUBTITLE_2": "Academic Area",
-        "SUBTITLE_2.2": "2019-Present"
+        "SUBTITLE_2.2": "Systems Engineering"
     },
     "CARRERA-ITEM": {
         "TITLE_1": "GRID - Research Group",
-        "DESCRIPCION_1": "University of Quindío research group, developing projects lightvirtualization using docker, containerd, etc",
+        "DESCRIPCION_1": "University of Quind\u00edo research group, developing projects lightvirtualization using docker, containerd, etc",
         "TIME_1": "Agosto/2023 ~ Current",
         "DURATION_1": "9 months",
         "TITLE_2": "Container-based virtualization to GRID",
@@ -81,7 +81,7 @@
         "TIME_3": "June/2021 ~ July/2022",
         "DURATION_3": "13 months",
         "TITLE_4": "Systems and Computing Engineering",
-        "DESCRIPCION_4": "Studies in Systems and Computing Engineering at the University of Quindío, professional studies in the field of computing.",
+        "DESCRIPCION_4": "Studies in Systems and Computing Engineering at the University of Quind\u00edo, professional studies in the field of computing.",
         "TIME_4": "January/2019 ~ Present",
         "DURATION_4": "5 years",
         "TITLE_5": "Google Project Management",

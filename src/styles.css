@@ -57,6 +57,10 @@
 }
 
 @layer components {
+  .dot-grid {
+    background-image: radial-gradient(circle, var(--color-border) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
   .glass {
     background: var(--color-glass);
     backdrop-filter: blur(20px);
