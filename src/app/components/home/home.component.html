@@ -1,25 +1,29 @@
-<section class="hero" id="inicio">
-  <div class="hero-content">
-    <div class="hero-text">
-      <span class="hero-greeting">{{'HOME.SALUDO' | translate}}</span>
-      <h1>{{'HOME.NOMBRE' | translate}}</h1>
-      <p class="hero-subtitle">{{'HOME.DESCRIPCION' | translate}}</p>
-      <div class="hero-actions">
-        <button class="btn btn-primary" (click)="irWhatsApp()">
+<section class="min-h-screen flex items-center px-16 pt-20 max-md:px-6 max-md:pt-24 max-md:pb-12" id="inicio">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-[1200px] mx-auto w-full max-md:gap-8 max-md:text-center">
+    <div>
+      <span class="inline-block bg-accent-dim text-accent px-4 py-1.5 rounded-full text-sm font-semibold mb-4">{{'HOME.SALUDO' | translate}}</span>
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-2 text-default">{{'HOME.NOMBRE' | translate}}</h1>
+      <p class="text-muted text-lg font-light mb-8">{{'HOME.DESCRIPCION' | translate}}</p>
+      <div class="flex items-center gap-6 mb-8 max-md:flex-col max-md:items-center">
+        <button (click)="irWhatsApp()"
+          class="bg-accent text-white px-6 py-3 rounded-lg font-semibold cursor-pointer transition-all duration-300 hover:bg-accent/90 hover:-translate-y-0.5 hover:shadow-btn border-none">
           <i class="bi bi-whatsapp"></i> {{'HOME.HABLEMOS' | translate}}
         </button>
-        <span class="cv-link" (click)="descargarCV()">
+        <span (click)="descargarCV()" class="text-muted hover:text-default cursor-pointer text-sm transition-colors">
           {{'HOME.DOWNLOAD' | translate}} <i class="bi bi-download"></i>
         </span>
       </div>
-      <div class="hero-social">
-        <a href="https://www.linkedin.com/in/jos%C3%A9-alejandro-arias-pinz%C3%B3n-20253a24a/" target="_blank"><i class="bi bi-linkedin"></i></a>
-        <a href="https://github.com/AariazP" target="_blank"><i class="bi bi-github"></i></a>
-        <a href="https://www.youtube.com/@Ariaz_/videos" target="_blank"><i class="bi bi-youtube"></i></a>
+      <div class="flex gap-4 max-md:justify-center">
+        <a href="https://www.linkedin.com/in/jos%C3%A9-alejandro-arias-pinz%C3%B3n-20253a24a/" target="_blank"
+          class="text-muted-light hover:text-accent text-xl transition-all hover:-translate-y-0.5"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/AariazP" target="_blank"
+          class="text-muted-light hover:text-accent text-xl transition-all hover:-translate-y-0.5"><i class="bi bi-github"></i></a>
+        <a href="https://www.youtube.com/@Ariaz_/videos" target="_blank"
+          class="text-muted-light hover:text-accent text-xl transition-all hover:-translate-y-0.5"><i class="bi bi-youtube"></i></a>
       </div>
     </div>
-    <div class="hero-image">
-      <img src="assets/imgs/image+icons.png" alt="Alejandro Arias">
+    <div class="max-md:order-first">
+      <img src="assets/imgs/image+icons.png" alt="Alejandro Arias" class="w-full max-w-[450px] block mx-auto max-md:max-w-[280px]">
     </div>
   </div>
 </section>

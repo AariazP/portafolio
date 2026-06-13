@@ -1,53 +1,49 @@
 @import "bootstrap-icons/font/bootstrap-icons.css";
+@import "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --bg-primary: #090e16;
-  --bg-secondary: #0d1520;
-  --accent: #7B4AE2;
-  --accent-dim: rgba(123, 74, 226, 0.15);
-  --text-primary: #ffffff;
-  --text-secondary: rgba(213, 213, 213, 0.7);
-  --text-muted: rgba(213, 213, 213, 0.4);
-  --border-color: rgba(123, 74, 226, 0.25);
+  --color-primary: #f8f9fa;
+  --color-secondary: #ffffff;
+  --color-accent: #7B4AE2;
+  --color-accent-dim: rgba(123, 74, 226, 0.08);
+  --color-muted: rgba(0, 0, 0, 0.55);
+  --color-muted-light: rgba(0, 0, 0, 0.3);
+  --color-text: #1a1a2e;
+  --color-border: rgba(123, 74, 226, 0.2);
+  --color-shadow: rgba(123, 74, 226, 0.1);
+  --color-shadow-dark: rgba(0, 0, 0, 0.08);
+  --color-shadow-btn: rgba(123, 74, 226, 0.25);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #090e16;
+    --color-secondary: #0d1520;
+    --color-accent: #7B4AE2;
+    --color-accent-dim: rgba(123, 74, 226, 0.15);
+    --color-muted: rgba(213, 213, 213, 0.7);
+    --color-muted-light: rgba(213, 213, 213, 0.4);
+    --color-text: #ffffff;
+    --color-border: rgba(123, 74, 226, 0.25);
+    --color-shadow: rgba(123, 74, 226, 0.15);
+    --color-shadow-dark: rgba(0, 0, 0, 0.5);
+    --color-shadow-btn: rgba(123, 74, 226, 0.3);
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-primary text-default;
+  }
+  .border, .border-t, .border-b, .border-r, .border-l, .border-x, .border-y {
+    border-color: var(--color-border);
+  }
 }
 
 html {
   scroll-behavior: smooth;
-}
-
-body {
-  background-color: var(--bg-primary);
-  color: var(--text-primary);
-  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-  overflow-x: hidden;
-}
-
-.section-label {
-  background-color: var(--accent-dim);
-  color: var(--accent);
-  display: inline-block;
-  padding: 6px 18px;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  margin-bottom: 1rem;
-}
-
-.section-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-}
-
-@media (max-width: 768px) {
-  .section-title {
-    font-size: 1.8rem;
-  }
 }

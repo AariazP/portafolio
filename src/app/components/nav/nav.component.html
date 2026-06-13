@@ -1,24 +1,45 @@
-<nav class="navbar">
-  <a class="brand" href="#inicio">Aariaz<span class="accent">&#64;</span>Kali$<span class="accent">~</span></a>
+<nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-4 bg-primary border-b">
+  <a href="#inicio" class="text-default font-light tracking-wider no-underline text-sm">
+    Aariaz<span class="text-accent">&#64;</span>Kali$<span class="text-accent">~</span>
+  </a>
 
-  <button class="hamburger" (click)="toggleMenu()" [class.open]="isMenuOpen" aria-label="Menu">
-    <span></span><span></span><span></span>
+  <button (click)="toggleMenu()" class="lg:hidden bg-transparent border-none cursor-pointer p-1" aria-label="Menu">
+    <div class="flex flex-col gap-[5px]">
+      <span class="block w-6 h-[2px] bg-muted rounded transition-all duration-300"
+        [ngClass]="isMenuOpen ? 'rotate-45 translate-y-[7px]' : ''"></span>
+      <span class="block w-6 h-[2px] bg-muted rounded transition-all duration-300"
+        [ngClass]="isMenuOpen ? 'opacity-0' : ''"></span>
+      <span class="block w-6 h-[2px] bg-muted rounded transition-all duration-300"
+        [ngClass]="isMenuOpen ? '-rotate-45 -translate-y-[7px]' : ''"></span>
+    </div>
   </button>
 
-  <div class="nav-links" [class.show]="isMenuOpen">
-    <a href="#inicio" (click)="isMenuOpen = false">{{'NAV.ITEM_0' | translate}}</a>
-    <a href="#sobremi" (click)="isMenuOpen = false">{{'NAV.ITEM_1' | translate}}</a>
-    <a href="#portafolio" (click)="isMenuOpen = false">{{'NAV.ITEM_2' | translate}}</a>
-    <a href="#habilidades" (click)="isMenuOpen = false">{{'NAV.ITEM_3' | translate}}</a>
-    <a href="#carrera" (click)="isMenuOpen = false">{{'NAV.ITEM_4' | translate}}</a>
-    <a href="#contact" (click)="isMenuOpen = false">{{'NAV.ITEM_5' | translate}}</a>
+  <div [ngClass]="[
+    'lg:flex items-center gap-6',
+    isMenuOpen ? 'flex flex-col fixed top-[60px] left-0 right-0 bg-primary p-4 gap-4 border-b' : 'hidden'
+  ]">
+    <a href="#inicio" (click)="isMenuOpen = false"
+      class="text-muted hover:text-default no-underline text-sm font-light transition-colors">{{'NAV.ITEM_0' | translate}}</a>
+    <a href="#sobremi" (click)="isMenuOpen = false"
+      class="text-muted hover:text-default no-underline text-sm font-light transition-colors">{{'NAV.ITEM_1' | translate}}</a>
+    <a href="#portafolio" (click)="isMenuOpen = false"
+      class="text-muted hover:text-default no-underline text-sm font-light transition-colors">{{'NAV.ITEM_2' | translate}}</a>
+    <a href="#habilidades" (click)="isMenuOpen = false"
+      class="text-muted hover:text-default no-underline text-sm font-light transition-colors">{{'NAV.ITEM_3' | translate}}</a>
+    <a href="#carrera" (click)="isMenuOpen = false"
+      class="text-muted hover:text-default no-underline text-sm font-light transition-colors">{{'NAV.ITEM_4' | translate}}</a>
+    <a href="#contact" (click)="isMenuOpen = false"
+      class="text-muted hover:text-default no-underline text-sm font-light transition-colors">{{'NAV.ITEM_5' | translate}}</a>
 
-    <div class="lang-dropdown">
-      <span class="lang-btn">{{'NAV.ITEM_6' | translate}}</span>
-      <div class="lang-menu">
-        <button (click)="switchLang('en')">🇺🇸 English</button>
-        <button (click)="switchLang('es')">🇨🇴 Español</button>
-        <button (click)="switchLang('zh')">🇨🇳 中文</button>
+    <div class="relative group">
+      <span class="text-muted text-sm font-light cursor-pointer">{{'NAV.ITEM_6' | translate}}</span>
+      <div class="hidden group-hover:block absolute top-full right-0 bg-secondary border rounded-lg p-2 min-w-[140px]">
+        <button (click)="switchLang('en')"
+          class="block w-full text-left px-3 py-1.5 text-sm text-muted hover:bg-accent-dim hover:text-accent rounded bg-transparent border-none cursor-pointer">🇺🇸 English</button>
+        <button (click)="switchLang('es')"
+          class="block w-full text-left px-3 py-1.5 text-sm text-muted hover:bg-accent-dim hover:text-accent rounded bg-transparent border-none cursor-pointer">🇨🇴 Español</button>
+        <button (click)="switchLang('zh')"
+          class="block w-full text-left px-3 py-1.5 text-sm text-muted hover:bg-accent-dim hover:text-accent rounded bg-transparent border-none cursor-pointer">🇨🇳 中文</button>
       </div>
     </div>
   </div>

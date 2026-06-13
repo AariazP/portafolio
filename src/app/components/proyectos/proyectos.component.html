@@ -1,99 +1,31 @@
-<section class="proyectos" id="portafolio">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-label">{{'PROYECTOS.SUBTITLE' | translate}}</span>
-      <h2 class="section-title">{{'PROYECTOS.TITLE' | translate}}</h2>
+<section class="py-20 px-8" id="portafolio">
+  <div class="max-w-[1200px] mx-auto">
+    <div class="text-center mb-12">
+      <span class="inline-block bg-accent-dim text-accent px-4 py-1.5 rounded-full text-sm font-semibold mb-4">{{'PROYECTOS.SUBTITLE' | translate}}</span>
+      <h2 class="text-4xl font-bold max-md:text-3xl text-default">{{'PROYECTOS.TITLE' | translate}}</h2>
     </div>
 
-    <div class="proyectos-grid">
-      <div class="proyecto-card">
-        <img src="assets/proyectos/Escuela.jpeg" alt="School project">
-        <div class="card-body">
-          <h3>{{'PROYECTOS.TITLE_1' | translate}}</h3>
-          <p>{{'PROYECTOS.DESCRIPCION_1' | translate}}</p>
-          <div class="tags">
-            <span class="tag angular">Angular</span>
-            <span class="tag typescript">TypeScript</span>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[1100px] mx-auto">
+      @for (proyecto of proyectos; track proyecto.title) {
+        <div class="bg-secondary border rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-accent-lg hover:border-accent">
+          <img [src]="proyecto.img" [alt]="proyecto.title" class="w-full h-[180px] object-cover">
+          <div class="p-6">
+            <h3 class="text-lg font-bold text-accent mb-3">{{ proyecto.title | translate }}</h3>
+            <p class="text-sm text-muted font-light leading-relaxed mb-4">{{ proyecto.desc | translate }}</p>
+            <div class="flex gap-2 mb-4 flex-wrap">
+              @for (tag of proyecto.tags; track tag.label) {
+                <span class="text-xs font-semibold px-2.5 py-1 rounded-full"
+                  [style.background]="tag.color + '33'"
+                  [style.color]="tag.color">{{ tag.label }}</span>
+              }
+            </div>
+            <a [href]="proyecto.link" target="_blank"
+              class="inline-flex items-center gap-1.5 bg-accent-dim text-accent px-4 py-2 rounded-lg no-underline text-sm font-semibold transition-all hover:bg-accent hover:text-white">
+              <i class="bi bi-github"></i> {{'PROYECTOS.TEXT_BUTTON' | translate}}
+            </a>
           </div>
-          <a href="https://github.com/AariazP/FrontBaseDatos.git" target="_blank" class="btn-gh">
-            <i class="bi bi-github"></i> {{'PROYECTOS.TEXT_BUTTON' | translate}}
-          </a>
         </div>
-      </div>
-
-      <div class="proyecto-card">
-        <img src="assets/proyectos/Clinica.png" alt="Clinic project">
-        <div class="card-body">
-          <h3>{{'PROYECTOS.TITLE_2' | translate}}</h3>
-          <p>{{'PROYECTOS.DESCRIPCION_2' | translate}}</p>
-          <div class="tags">
-            <span class="tag angular">Angular</span>
-            <span class="tag typescript">TypeScript</span>
-          </div>
-          <a href="https://github.com/AariazP/clinicaFront.git" target="_blank" class="btn-gh">
-            <i class="bi bi-github"></i> {{'PROYECTOS.TEXT_BUTTON' | translate}}
-          </a>
-        </div>
-      </div>
-
-      <div class="proyecto-card">
-        <img src="assets/proyectos/spring.avif" alt="Spring backend">
-        <div class="card-body">
-          <h3>{{'PROYECTOS.TITLE_3' | translate}}</h3>
-          <p>{{'PROYECTOS.DESCRIPCION_3' | translate}}</p>
-          <div class="tags">
-            <span class="tag spring">Spring</span>
-            <span class="tag mysql">MySql</span>
-          </div>
-          <a href="https://github.com/Parritap/Clinica.git" target="_blank" class="btn-gh">
-            <i class="bi bi-github"></i> {{'PROYECTOS.TEXT_BUTTON' | translate}}
-          </a>
-        </div>
-      </div>
-
-      <div class="proyecto-card">
-        <img src="assets/proyectos/mercadolibre.jpg" alt="Web scraper">
-        <div class="card-body">
-          <h3>{{'PROYECTOS.TITLE_4' | translate}}</h3>
-          <p>{{'PROYECTOS.DESCRIPCION_4' | translate}}</p>
-          <div class="tags">
-            <span class="tag python">Python</span>
-            <span class="tag excel">Excel</span>
-          </div>
-          <a href="https://github.com/AariazP/mercadoLibre-Scrapper.git" target="_blank" class="btn-gh">
-            <i class="bi bi-github"></i> {{'PROYECTOS.TEXT_BUTTON' | translate}}
-          </a>
-        </div>
-      </div>
-
-      <div class="proyecto-card">
-        <img src="assets/proyectos/force_brute.png" alt="WiFi brute force">
-        <div class="card-body">
-          <h3>{{'PROYECTOS.TITLE_5' | translate}}</h3>
-          <p>{{'PROYECTOS.DESCRIPCION_5' | translate}}</p>
-          <div class="tags">
-            <span class="tag java">Java</span>
-          </div>
-          <a href="https://github.com/AariazP/wifiTest.git" target="_blank" class="btn-gh">
-            <i class="bi bi-github"></i> {{'PROYECTOS.TEXT_BUTTON' | translate}}
-          </a>
-        </div>
-      </div>
-
-      <div class="proyecto-card">
-        <img src="assets/proyectos/patterns.png" alt="Design patterns">
-        <div class="card-body">
-          <h3>{{'PROYECTOS.TITLE_6' | translate}}</h3>
-          <p>{{'PROYECTOS.DESCRIPCION_6' | translate}}</p>
-          <div class="tags">
-            <span class="tag java">Java</span>
-            <span class="tag markdown">Markdown</span>
-          </div>
-          <a href="https://github.com/AariazP/DesignPatterns.git" target="_blank" class="btn-gh">
-            <i class="bi bi-github"></i> {{'PROYECTOS.TEXT_BUTTON' | translate}}
-          </a>
-        </div>
-      </div>
+      }
     </div>
   </div>
 </section>

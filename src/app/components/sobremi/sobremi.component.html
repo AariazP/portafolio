@@ -1,43 +1,32 @@
-<section class="sobremi" id="sobremi">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-label">{{'NAV.ITEM_1' | translate}}</span>
-      <h2 class="section-title">{{'SOBREMI.TITLE_1' | translate}} {{'SOBREMI.SUBTITLE_1' | translate}}</h2>
+<section class="py-20 px-8" id="sobremi">
+  <div class="max-w-[1200px] mx-auto">
+    <div class="text-center mb-12">
+      <span class="inline-block bg-accent-dim text-accent px-4 py-1.5 rounded-full text-sm font-semibold mb-4">{{'NAV.ITEM_1' | translate}}</span>
+      <h2 class="text-4xl font-bold max-md:text-3xl text-default">{{'SOBREMI.TITLE_1' | translate}} {{'SOBREMI.SUBTITLE_1' | translate}}</h2>
     </div>
 
-    <div class="cards-grid">
-      <div class="card-sobremi">
-        <i class="bi bi-code-slash"></i>
-        <h3>{{'SOBREMI.TITLE_1' | translate}}</h3>
-        <p>{{'SOBREMI.SUBTITLE_1' | translate}}</p>
-        <span class="card-stat">3+ {{'CARRERA.SUBTITLE_1.1' | translate}}</span>
-      </div>
-      <div class="card-sobremi">
-        <i class="bi bi-bricks"></i>
-        <h3>{{'SOBREMI.TITLE_2' | translate}}</h3>
-        <p>{{'SOBREMI.SUBTITLE_2' | translate}}</p>
-        <span class="card-stat">4+ {{'CARRERA.SUBTITLE_2.2' | translate}}</span>
-      </div>
-      <div class="card-sobremi">
-        <i class="bi bi-diagram-3-fill"></i>
-        <h3>{{'SOBREMI.TITLE_3' | translate}}</h3>
-        <p>{{'SOBREMI.SUBTITLE_3' | translate}}</p>
-        <span class="card-stat">1+ {{'CARRERA.SUBTITLE_1.1' | translate}}</span>
-      </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[900px] mx-auto mb-16 max-md:max-w-[350px]">
+      @for (card of cards; track card.icon) {
+        <div class="bg-secondary border rounded-xl p-10 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-accent-lg hover:border-accent">
+          <i [class]="card.icon + ' text-accent text-3xl mb-4 block'"></i>
+          <h3 class="text-base font-light text-muted mb-1">{{ card.title | translate }}</h3>
+          <p class="text-lg font-bold mt-3 text-default">{{ card.subtitle | translate }}</p>
+        </div>
+      }
     </div>
 
-    <div class="stats-row">
-      <div class="stat-item">
-        <span class="stat-value">{{'SOBREMI.DESCRIPCION_1' | translate}}</span>
-        <span class="stat-label">{{'SOBREMI.DESCRIPCION_1.1' | translate}}</span>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-[800px] mx-auto bg-accent-dim rounded-xl p-6">
+      <div class="text-center">
+        <span class="block text-sm text-accent mb-1">{{'SOBREMI.DESCRIPCION_1' | translate}}</span>
+        <span class="block text-xl font-extrabold text-accent">{{'SOBREMI.DESCRIPCION_1.1' | translate}}</span>
       </div>
-      <div class="stat-item">
-        <span class="stat-value">{{'SOBREMI.DESCRIPCION_2' | translate}}</span>
-        <span class="stat-label">{{'SOBREMI.DESCRIPCION_2.1' | translate}}</span>
+      <div class="text-center">
+        <span class="block text-sm text-accent mb-1">{{'SOBREMI.DESCRIPCION_2' | translate}}</span>
+        <span class="block text-xl font-extrabold text-accent">{{'SOBREMI.DESCRIPCION_2.1' | translate}}</span>
       </div>
-      <div class="stat-item">
-        <span class="stat-value">{{'SOBREMI.DESCRIPCION_3' | translate}}</span>
-        <span class="stat-label">{{'SOBREMI.DESCRIPCION_3.1' | translate}}</span>
+      <div class="text-center">
+        <span class="block text-sm text-accent mb-1">{{'SOBREMI.DESCRIPCION_3' | translate}}</span>
+        <span class="block text-xl font-extrabold text-accent">{{'SOBREMI.DESCRIPCION_3.1' | translate}}</span>
       </div>
     </div>
   </div>

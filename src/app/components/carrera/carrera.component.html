@@ -1,15 +1,15 @@
-<section class="carrera" id="carrera">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-label">{{'CARRERA.TRAYECTORIA' | translate}}</span>
-      <h2 class="section-title">{{'CARRERA.TITLE' | translate}}</h2>
+<section class="py-20 px-8" id="carrera">
+  <div class="max-w-[1200px] mx-auto">
+    <div class="text-center mb-12">
+      <span class="inline-block bg-accent-dim text-accent px-4 py-1.5 rounded-full text-sm font-semibold mb-4">{{'CARRERA.TRAYECTORIA' | translate}}</span>
+      <h2 class="text-4xl font-bold max-md:text-3xl">{{'CARRERA.TITLE' | translate}}</h2>
     </div>
 
-    <div class="carrera-grid">
-      <div class="carrera-column">
-        <h3 class="column-title">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-[1100px] mx-auto">
+      <div>
+        <h3 class="text-2xl font-normal text-muted text-center mb-6">
           {{'CARRERA.SUBTITLE_1' | translate}}
-          <small>{{'CARRERA.SUBTITLE_1.1' | translate}}</small>
+          <small class="block text-sm font-light text-muted-light mt-1">{{'CARRERA.SUBTITLE_1.1' | translate}}</small>
         </h3>
         <app-carrera-item
           title="{{'CARRERA-ITEM.TITLE_1' | translate}}"
@@ -31,10 +31,10 @@
           duracion="{{'CARRERA-ITEM.DURATION_3' | translate}}" />
       </div>
 
-      <div class="carrera-column">
-        <h3 class="column-title">
+      <div>
+        <h3 class="text-2xl font-normal text-muted text-center mb-6">
           {{'CARRERA.SUBTITLE_2' | translate}}
-          <small>{{'CARRERA.SUBTITLE_2.2' | translate}}</small>
+          <small class="block text-sm font-light text-muted-light mt-1">{{'CARRERA.SUBTITLE_2.2' | translate}}</small>
         </h3>
         <app-carrera-item
           img="assets/educacion/udelQuindio.png"

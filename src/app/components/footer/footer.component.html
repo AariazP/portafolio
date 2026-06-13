@@ -1,24 +1,25 @@
-<footer id="contact">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-label">{{'FOOTER.TITLE' | translate}}</span>
-      <h2 class="section-title">{{'FOOTER.TITLE' | translate}}</h2>
+<footer class="py-20 px-8 pt-20 pb-8 border-t" id="contact">
+  <div class="max-w-[1200px] mx-auto">
+    <div class="text-center mb-8">
+      <span class="inline-block bg-accent-dim text-accent px-4 py-1.5 rounded-full text-sm font-semibold mb-4">{{'FOOTER.TITLE' | translate}}</span>
+      <h2 class="text-4xl font-bold max-md:text-3xl text-default">{{'FOOTER.TITLE' | translate}}</h2>
     </div>
 
-    <div class="footer-contact">
-      <a href="mailto:alejo17ariazpzn@gmail.com" class="email-link">
-        <i class="bi bi-envelope-fill"></i> {{ correo }}
+    <div class="flex items-center justify-center gap-4 mb-12">
+      <a href="mailto:alejo17ariazpzn@gmail.com" class="text-muted hover:text-accent text-lg no-underline transition-colors">
+        <i class="bi bi-envelope-fill mr-2"></i> {{ correo }}
       </a>
-      <button class="btn-copy" (click)="copiar()" title="Copy email">
+      <button (click)="copiar()" title="Copy email"
+        class="bg-accent-dim border text-accent px-3 py-2 rounded-lg cursor-pointer text-lg transition-all hover:bg-accent hover:text-white">
         <i class="bi bi-clipboard"></i>
       </button>
     </div>
 
-    <div class="footer-bottom">
-      <a href="#inicio" class="back-top">
-        <i class="bi bi-arrow-up"></i> {{'FOOTER.IR-INICIO' | translate}}
+    <div class="flex flex-col items-center gap-4">
+      <a href="#inicio" class="text-muted-light hover:text-accent no-underline text-sm transition-colors">
+        <i class="bi bi-arrow-up mr-1"></i> {{'FOOTER.IR-INICIO' | translate}}
       </a>
-      <p class="copyright">Copyright &copy; Alejandro Arias • 2023</p>
+      <p class="text-muted-light text-sm">Copyright &copy; Alejandro Arias • 2023</p>
     </div>
   </div>
 </footer>
