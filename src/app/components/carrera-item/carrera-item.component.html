@@ -1,15 +1,9 @@
-<div class="component">
-    <p class="title">{{title}}</p>     
-    <p class="parrafo">{{parrafo}}</p>
-    <div class="row">
-        <img class="img-fluid" src={{img}} alt={{alt}}>
-    </div>
-    <div class="row">
-        <div class="col fecha">
-            {{duracion}}
-        </div>
-        <div class="col fecha">
-            {{fecha}}
-        </div>
-    </div>
+<div class="career-card">
+  <h4 class="career-title">{{title}}</h4>
+  <p class="career-desc">{{parrafo}}</p>
+  <img [src]="img" alt="{{title}}" loading="lazy">
+  <div class="career-meta">
+    <span><i class="bi bi-calendar3"></i> {{fecha}}</span>
+    <span><i class="bi bi-clock"></i> {{duracion}}</span>
+  </div>
 </div>

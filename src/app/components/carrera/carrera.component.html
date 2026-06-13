@@ -1,61 +1,60 @@
-<div class="div-trayectoria" id="carrera">
-    <h6 class="trayectoria">{{'CARRERA.TRAYECTORIA' | translate }}</h6>  
-</div>
+<section class="carrera" id="carrera">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">{{'CARRERA.TRAYECTORIA' | translate}}</span>
+      <h2 class="section-title">{{'CARRERA.TITLE' | translate}}</h2>
+    </div>
 
-<div class="component">
-  <p class=" title text-center">{{'CARRERA.TITLE' | translate }}</p>
-  <div class="row">
-    <div class="col-lg-6 col-sm-12">
-      <p>
-        <span class="subtitle">{{'CARRERA.SUBTITLE_1' | translate }}</span> <br />
-        <span class="subtitle-time">{{'CARRERA.SUBTITLE_1.1' | translate }}</span>
-      </p>
-      <div class="items col">
-        <app-carrera-item [title]="'CARRERA-ITEM.TITLE_1' | translate" 
-        [img]="'assets/educacion/sinfoci.png'"
-        [parrafo]="'CARRERA-ITEM.DESCRIPCION_1' | translate"
-        [fecha]="'CARRERA-ITEM.TIME_1' | translate "
-        [duracion]="'CARRERA-ITEM.DURATION_1' | translate"/>
+    <div class="carrera-grid">
+      <div class="carrera-column">
+        <h3 class="column-title">
+          {{'CARRERA.SUBTITLE_1' | translate}}
+          <small>{{'CARRERA.SUBTITLE_1.1' | translate}}</small>
+        </h3>
+        <app-carrera-item
+          title="{{'CARRERA-ITEM.TITLE_1' | translate}}"
+          img="assets/educacion/sinfoci.png"
+          parrafo="{{'CARRERA-ITEM.DESCRIPCION_1' | translate}}"
+          fecha="{{'CARRERA-ITEM.TIME_1' | translate}}"
+          duracion="{{'CARRERA-ITEM.DURATION_1' | translate}}" />
+        <app-carrera-item
+          title="{{'CARRERA-ITEM.TITLE_2' | translate}}"
+          img="assets/educacion/MDD.png"
+          parrafo="{{'CARRERA-ITEM.DESCRIPCION_2' | translate}}"
+          fecha="{{'CARRERA-ITEM.TIME_2' | translate}}"
+          duracion="{{'CARRERA-ITEM.DURATION_2' | translate}}" />
+        <app-carrera-item
+          title="{{'CARRERA-ITEM.TITLE_3' | translate}}"
+          img="assets/educacion/sis.jpg"
+          parrafo="{{'CARRERA-ITEM.DESCRIPCION_3' | translate}}"
+          fecha="{{'CARRERA-ITEM.TIME_3' | translate}}"
+          duracion="{{'CARRERA-ITEM.DURATION_3' | translate}}" />
+      </div>
 
-        <app-carrera-item [title]="'CARRERA-ITEM.TITLE_2' | translate" 
-        [img]="'assets/educacion/MDD.png'"
-        [parrafo]="'CARRERA-ITEM.DESCRIPCION_2' | translate"
-        [fecha]="'CARRERA-ITEM.TIME_2' | translate "
-        [duracion]="'CARRERA-ITEM.DURATION_2' | translate" />
-
-        <app-carrera-item [title]="'CARRERA-ITEM.TITLE_3' | translate" 
-        [img]="'assets/educacion/sis.jpg'"
-        [parrafo]="'CARRERA-ITEM.DESCRIPCION_3' | translate"
-        [fecha]="'CARRERA-ITEM.TIME_3' | translate "
-        [duracion]="'CARRERA-ITEM.DURATION_3' | translate"/>
+      <div class="carrera-column">
+        <h3 class="column-title">
+          {{'CARRERA.SUBTITLE_2' | translate}}
+          <small>{{'CARRERA.SUBTITLE_2.2' | translate}}</small>
+        </h3>
+        <app-carrera-item
+          img="assets/educacion/udelQuindio.png"
+          title="{{'CARRERA-ITEM.TITLE_4' | translate}}"
+          parrafo="{{'CARRERA-ITEM.DESCRIPCION_4' | translate}}"
+          fecha="{{'CARRERA-ITEM.TIME_4' | translate}}"
+          duracion="{{'CARRERA-ITEM.DURATION_4' | translate}}" />
+        <app-carrera-item
+          img="assets/educacion/google.png"
+          title="{{'CARRERA-ITEM.TITLE_5' | translate}}"
+          parrafo="{{'CARRERA-ITEM.DESCRIPCION_5' | translate}}"
+          fecha="{{'CARRERA-ITEM.TIME_5' | translate}}"
+          duracion="{{'CARRERA-ITEM.DURATION_5' | translate}}" />
+        <app-carrera-item
+          img="assets/educacion/english.png"
+          title="{{'CARRERA-ITEM.TITLE_6' | translate}}"
+          parrafo="{{'CARRERA-ITEM.DESCRIPCION_6' | translate}}"
+          fecha="{{'CARRERA-ITEM.TIME_6' | translate}}"
+          duracion="{{'CARRERA-ITEM.DURATION_6' | translate}}" />
       </div>
     </div>
-    <div class="col-lg-6 col-sm-12">
-      <p class="academia">
-        <span class="subtitle"> {{'CARRERA.SUBTITLE_2' | translate }}</span><br />
-        <span class="subtitle-time">{{'CARRERA.SUBTITLE_2.2' | translate }}</span>
-      </p>
-      <div class="items col">
-      <app-carrera-item  
-      [img]="'assets/educacion/udelQuindio.png'"
-      [title]="'CARRERA-ITEM.TITLE_4' | translate" 
-      [parrafo]="' CARRERA-ITEM.DESCRIPCION_4' | translate "
-      [fecha]="'CARRERA-ITEM.TIME_4' | translate "
-      [duracion]="'CARRERA-ITEM.DURATION_4' | translate"/>
-      <app-carrera-item  
-      [img]="'assets/educacion/google.png'"
-      [title]="'CARRERA-ITEM.TITLE_5' | translate" 
-      [parrafo]="'CARRERA-ITEM.DESCRIPCION_5' | translate"
-      [fecha]="'CARRERA-ITEM.TIME_5' | translate "
-      [duracion]="'CARRERA-ITEM.DURATION_5' | translate"/>
-
-      <app-carrera-item 
-        [img]="'assets/educacion/english.png'"
-        [title]="'CARRERA-ITEM.TITLE_6' | translate" 
-        [parrafo]="'CARRERA-ITEM.DESCRIPCION_6' | translate"
-        [fecha]="'CARRERA-ITEM.TIME_6' | translate "
-        [duracion]="'CARRERA-ITEM.DURATION_6' | translate"/>
-    </div>
-    </div>
   </div>
-</div>
+</section>

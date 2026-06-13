@@ -1,5 +1,53 @@
 @import "bootstrap-icons/font/bootstrap-icons.css";
-@font-face {
-  font-family: Raleway;
-  src: url('/src/assets/font/Raleway/static/Raleway-Regular.ttf');
+
+:root {
+  --bg-primary: #090e16;
+  --bg-secondary: #0d1520;
+  --accent: #7B4AE2;
+  --accent-dim: rgba(123, 74, 226, 0.15);
+  --text-primary: #ffffff;
+  --text-secondary: rgba(213, 213, 213, 0.7);
+  --text-muted: rgba(213, 213, 213, 0.4);
+  --border-color: rgba(123, 74, 226, 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+.section-label {
+  background-color: var(--accent-dim);
+  color: var(--accent);
+  display: inline-block;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
 }

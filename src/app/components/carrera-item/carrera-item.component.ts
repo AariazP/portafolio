@@ -8,12 +8,9 @@ import { Component, Input } from '@angular/core';
   styleUrl: './carrera-item.component.css'
 })
 export class CarreraItemComponent {
-
-  @Input() title!:string;
-  @Input() parrafo!:string;
-  @Input() fecha!:string;
-  @Input() duracion!:string;
-  @Input() img!:string;
-  @Input() alt!:string;
-
+  @Input() title!: string;
+  @Input() parrafo!: string;
+  @Input() fecha!: string;
+  @Input() duracion!: string;
+  @Input() img!: string;
 }

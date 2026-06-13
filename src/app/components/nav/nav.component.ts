@@ -1,54 +1,33 @@
-import { Component, OnInit} from '@angular/core';
-import { CommonModule, NgFor, NgIf } from '@angular/common';
-import { RouterModule } from '@angular/router';
-import { TranslateService } from '@ngx-translate/core';
-import { TranslateModule } from '@ngx-translate/core';
-
+import { Component, HostListener } from '@angular/core';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-nav',
   standalone: true,
-  imports: [CommonModule, NgIf, NgFor, RouterModule, TranslateModule],
+  imports: [TranslateModule],
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.css',
 })
-export class NavComponent implements OnInit {
-
-
-  isMediumScreen!: boolean; // variables para el responsive
-  isSmallScreen!: boolean;
-  isExtraSmallScreen!: boolean;
+export class NavComponent {
+  isMenuOpen = false;
+  isMobile = false;
 
   constructor(public translate: TranslateService) {
-
-    translate.addLangs(['en', 'es', 'zh']);
-    translate.setDefaultLang('en');
-    const browserLang = translate.getBrowserLang();
-    translate.use(browserLang?.match(/en|es/) ? browserLang : 'en');
-    //muestro por consola todos los idiomas disponibles
-    
-
+    this.checkScreen();
   }
 
-  ngOnInit(): void {
-    this.checkScreenSize();
-    window.addEventListener('resize', () => this.checkScreenSize());
+  @HostListener('window:resize')
+  checkScreen() {
+    this.isMobile = window.innerWidth < 768;
+    if (!this.isMobile) this.isMenuOpen = false;
   }
 
-  private checkScreenSize() {
-    this.isMediumScreen = window.innerWidth < 1107;
-    this.isSmallScreen = window.innerWidth < 1033;
-    this.isExtraSmallScreen = window.innerWidth < 915;
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
   }
 
-  public getSize(): number {
-    return window.innerWidth;
-  }
-
-  cambiarIdioma(lang: string) {
+  switchLang(lang: string) {
     this.translate.use(lang);
+    this.isMenuOpen = false;
   }
-  
-  
-
 }

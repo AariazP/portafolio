@@ -1,28 +1,24 @@
-<div id=contact>
-  <div class="div-contacto">
-    <h6 class="contacto">{{'FOOTER.TITLE' | translate}}</h6>
-  </div>
-  <div class="correo-paste">
-    <div class="row">
-      <a href="mailto:alejo17ariazpzn@gmail.com" class="text-center">{{
-        correo
-      }}</a>
+<footer id="contact">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">{{'FOOTER.TITLE' | translate}}</span>
+      <h2 class="section-title">{{'FOOTER.TITLE' | translate}}</h2>
     </div>
-    <div class="paste">
-      <i class="bi bi-clipboard clip" (click)="copiar()"></i>
-    </div>
-  </div>
 
-  <div class="row ir-inicio">
-    <a href="#nav">
-      <h6 class="text-center" >
-        {{'FOOTER.IR-INICIO' | translate}}<i class="bi bi-arrow-bar-up" href="#nav"></i>
-      </h6>
-    </a>
-  </div>
-  <div class="container-fluid">
-    <div class="row">
-      <p class="copy text-center">Copyright © Alejandro Arias • 2023</p>
+    <div class="footer-contact">
+      <a href="mailto:alejo17ariazpzn@gmail.com" class="email-link">
+        <i class="bi bi-envelope-fill"></i> {{ correo }}
+      </a>
+      <button class="btn-copy" (click)="copiar()" title="Copy email">
+        <i class="bi bi-clipboard"></i>
+      </button>
+    </div>
+
+    <div class="footer-bottom">
+      <a href="#inicio" class="back-top">
+        <i class="bi bi-arrow-up"></i> {{'FOOTER.IR-INICIO' | translate}}
+      </a>
+      <p class="copyright">Copyright &copy; Alejandro Arias • 2023</p>
     </div>
   </div>
-</div>
+</footer>

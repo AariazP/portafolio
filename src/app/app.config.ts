@@ -1,41 +1,29 @@
-import { IMAGE_CONFIG } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
-import { ApplicationConfig, importProvidersFrom } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { routes } from './app.routes';
-import { RouterModule } from '@angular/router';
+import { ApplicationConfig, APP_INITIALIZER } from '@angular/core';
+import { provideHttpClient } from '@angular/common/http';
+import { provideTranslateService, TranslateService } from '@ngx-translate/core';
+import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
 
-export function createTranslateLoader(http: HttpClient) {
-  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+export function initTranslate(translate: TranslateService) {
+  translate.addLangs(['en', 'es', 'zh']);
+  translate.setDefaultLang('en');
+  return () => translate.use('en').toPromise();
 }
 
 export const appConfig: ApplicationConfig = {
   providers: [
+    provideHttpClient(),
+    provideTranslateService({
+      useDefaultLang: false,
+    }),
+    provideTranslateHttpLoader({
+      prefix: './assets/i18n/',
+      suffix: '.json',
+    }),
     {
-      provide: IMAGE_CONFIG,
-      useValue: {
-        disableImageSizeWarning: true,
-        disableImageLazyLoadWarning: true,
-      },
+      provide: APP_INITIALIZER,
+      useFactory: initTranslate,
+      deps: [TranslateService],
+      multi: true,
     },
-    importProvidersFrom(HttpClientModule), 
-    importProvidersFrom(
-      TranslateModule.forRoot({
-        loader: {
-          provide: TranslateLoader,
-          useFactory: createTranslateLoader,
-          deps: [HttpClient],
-        },
-      })
-    ),
-    importProvidersFrom(
-    RouterModule.forRoot(routes, {
-      onSameUrlNavigation: "ignore",
-      anchorScrolling:'enabled',
-      scrollPositionRestoration: 'enabled',
-      useHash: true
-    })),
   ],
 };

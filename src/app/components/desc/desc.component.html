@@ -1,22 +1,17 @@
-<div class="component row">
-
-    <div class="col-lg-6 col-md-12">
-        <img src="assets/imgs/profile.jpg" alt="Alejandro Arias Ingeniero" class="img-fluid">
+<section class="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image">
+        <img src="assets/imgs/profile.jpg" alt="Alejandro Arias">
+      </div>
+      <div class="about-text">
+        <span class="section-label">{{'DESC.TITLE' | translate}}</span>
+        <h2>{{'DESC.NAME' | translate}}</h2>
+        <p>{{'DESC.DESCRIPCION_1' | translate}}</p>
+        <p>{{'DESC.DESCRIPCION_2' | translate}}</p>
+        <p>{{'DESC.DESCRIPCION_3' | translate}}</p>
+        <p>{{'DESC.DESCRIPCION_4' | translate}}</p>
+      </div>
     </div>
-    <div class="col-lg-6 col-md-12 d-flex flex-column align-items-center justify-content-center">
-        <div class=" me-class d-flex align-items-center justify-content-center" [ngClass]="isMobile() ? 'mobile':'' ">
-            <span class="about-me-title"> {{'DESC.TITLE' | translate}}</span>
-        </div>
-        <h3>{{'DESC.NAME' | translate}}</h3>
-        <p>
-            {{'DESC.DESCRIPCION_1' | translate}}<br><br>
-
-            {{'DESC.DESCRIPCION_2' | translate}}<br><br>
-
-            {{'DESC.DESCRIPCION_3' | translate}}<br><br>
-
-            {{'DESC.DESCRIPCION_4' | translate}}<br>
-        </p>
-    </div>
-
-</div>
+  </div>
+</section>

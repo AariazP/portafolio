@@ -1,119 +1,72 @@
-
-a{
-    color: rgb(213,213,213,0.8);
-    text-decoration: none;
-    font-size: 1.5rem;
+footer {
+  padding: 5rem 2rem 2rem;
+  border-top: 1px solid var(--border-color);
 }
 
-.correo{
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.section-header {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-.paste{
-    font-size: 1px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
-.clip{
-    font-size: 30px;
-    color: rgb(213,213,213,0.8);
-    cursor: pointer;
+.footer-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
 }
 
-
-.contacto{
-    margin-left: 100px;
-    margin-top: 50px;
-    background-color: rgb(123,74,226,0.1);
-    border-radius: 10px;
-    color: rgb(123,74,226);
-    font-size: 30px;
-    display: inline-block;
-
-}
-@media screen and (max-width: 991px) {
-    .div-contacto{
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        margin: auto;
-       
-    }
-    .contacto{
-        margin: auto;
-        margin-top: 30px;
-    }
-
+.email-link {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.2s;
 }
 
-.div-correo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
+.email-link:hover {
+  color: var(--accent);
 }
 
-
-
-.div-correo i{
-    font-size: 30px;
-    color: rgb(213,213,213,0.8);
+.btn-copy {
+  background: var(--accent-dim);
+  border: 1px solid var(--border-color);
+  color: var(--accent);
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: all 0.2s;
 }
 
-.div-correo p{
-    font-size: 20px;
-    color: rgb(123,74,226);
+.btn-copy:hover {
+  background: var(--accent);
+  color: white;
 }
 
-.correo-paste{
-    margin-top: 30px;
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
-.ir-inicio{
-    margin-top: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(213,213,213,0.8);
-    
+.back-top {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
 }
 
-.ir-inicio i{
-    
-    color: rgb(213,213,213,0.8);
-    cursor: pointer;
+.back-top:hover {
+  color: var(--accent);
 }
 
-.ir-inicio p, h6{
-    font-size: 20px;
-}
-
-footer{
-    background-color: rgb(123,74,226, 0.1);
-    height: 50px;
-    width: 100%;
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.copy{
-    color: rgb(213,213,213,0.4);
-    font-size: 20px;
-    margin-top: 15px;
-}
-
-.redes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(213,213,213,0.4);
-    margin-top: 15px;
+.copyright {
+  color: var(--text-muted);
+  font-size: 0.85rem;
 }

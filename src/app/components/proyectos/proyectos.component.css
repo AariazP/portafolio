@@ -1,125 +1,110 @@
-.cards{
-
-    margin-top: 50px;
-    margin-left: 40px;
-   
-
-}
-.card{
-    margin-top: 30px;
-    background-color: transparent;
-    color:rgb(213, 213, 213);
+.proyectos {
+  padding: 5rem 2rem;
 }
 
-.card-title{
-    font-size: 20px;
-    font-weight: bold;
-    color: rgb(213, 213, 213);
-    margin-bottom: 20px;    
-    color: RGB(123,74,226);
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
-.container-card{
-    padding: 10px 10px;
-    border: 3px solid rgb(213, 213, 213, 0.1);
-    max-width: 312px;
-    border-radius: 10px;
-    margin-right: 40px;
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-.btn{
-    background-color: rgb(213, 213, 213);
-    color: rgb(0, 0, 0);
-    border-radius: 10px;
-    border: 1px solid rgb(213, 213, 213);
-    margin-top: 10px;
-    margin-bottom: 10px;
+.proyecto-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s;
 }
 
-.ver-github{
-    background-color: rgb(123,74,226,0.1);
-    color: rgb(123,74,226);
-    border-radius: 10px;
-    border: 1px solid rgb(0, 0, 0);
-    margin-top: 10px;
-    margin-bottom: 10px;
-
+.proyecto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(123, 74, 226, 0.15);
+  border-color: var(--accent);
 }
 
-.portafolio-item{
-    margin-left: 100px;
-    margin-top: 50px;
-    background-color: rgb(123,74,226,0.1);
-    border-radius: 10px;
-    color: rgb(123,74,226);
-    font-size: 30px;
-    display: inline-block;
-
+.proyecto-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
 }
 
-@media screen and (max-width: 600px) {
-    
-    .cards{
-        margin: auto;
-    }
-    .card{
-        margin-top: 30px;
-        background-color: transparent;
-        color: rgb(213, 213, 213);
-    }
-    
-    .container-card{
-        padding: auto;
-        border: 3px solid rgb(213, 213, 213, 0.1);
-        max-width: 312px;
-        border-radius: 10px;
-    
-    }
-    
-    .btn{
-        background-color: rgb(213, 213, 213);
-        color: rgb(0, 0, 0);
-        border-radius: 10px;
-        border: 1px solid rgb(213, 213, 213);
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .ver-github{
-        background-color: rgb(123,74,226,0.1);
-        color: rgb(123,74,226);
-        border-radius: 10px;
-        border: 1px solid rgb(0, 0, 0);
-        margin-top: 10px;
-        margin-bottom: 10px;
-    
-    }    
-
+.card-body {
+  padding: 1.5rem;
 }
 
-@media screen and (max-width: 990px) {
-
-    .div-portafolio{
-        justify-content: center;
-        align-items: center;
-        display: flex;
-       
-    }
-    .portafolio-item{
-        margin-left: 0px;
-    }
-    
+.card-body h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.7rem;
 }
 
-.title-trabajos{
-
-    color: rgb(213, 213, 213);
-    font-size: 50px;
-    font-weight: 700;
+.card-body p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 1rem;
 }
 
-.div-trabajos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 0.75rem;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.tag.angular { background: rgba(221, 0, 49, 0.2); color: #dd0031; }
+.tag.typescript { background: rgba(49, 120, 198, 0.2); color: #3178c6; }
+.tag.spring { background: rgba(107, 189, 91, 0.2); color: #6bbd5b; }
+.tag.mysql { background: rgba(0, 117, 143, 0.2); color: #00758f; }
+.tag.python { background: rgba(55, 118, 171, 0.2); color: #3776ab; }
+.tag.excel { background: rgba(33, 115, 70, 0.2); color: #217346; }
+.tag.java { background: rgba(237, 139, 0, 0.2); color: #ed8b00; }
+.tag.markdown { background: rgba(255, 255, 255, 0.15); color: #ddd; }
+
+.btn-gh {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--accent-dim);
+  color: var(--accent);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-gh:hover {
+  background: var(--accent);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .proyectos-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .proyectos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

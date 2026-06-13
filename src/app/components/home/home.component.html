@@ -1,26 +1,25 @@
-<div class="component row align-items-center d-flex flex-wrap" id=inicio>
-
-    <div class="col-12 col-md-4 text-center">
-        <div class="saludo justify-content-start">
-            <h6> {{'HOME.SALUDO' | translate}}</h6>
-        </div>
-        <div class="justify-content-start">
-            <h1>{{'HOME.NOMBRE' | translate}}</h1>
-            <h6 class="subtitle">{{'HOME.DESCRIPCION' | translate}}</h6>
-            <a href="https://www.linkedin.com/in/jos%C3%A9-alejandro-arias-pinz%C3%B3n-20253a24a/" target="_blank" ><i class="redes bi bi-linkedin"></i></a>
-            <a href="https://github.com/AariazP" target="_blank"><i class="redes bi bi-github"></i></a>
-            <a href="https://www.youtube.com/@Ariaz_/videos" target="_blank"><i class="redes bi bi-youtube"></i></a>
-        </div>
+<section class="hero" id="inicio">
+  <div class="hero-content">
+    <div class="hero-text">
+      <span class="hero-greeting">{{'HOME.SALUDO' | translate}}</span>
+      <h1>{{'HOME.NOMBRE' | translate}}</h1>
+      <p class="hero-subtitle">{{'HOME.DESCRIPCION' | translate}}</p>
+      <div class="hero-actions">
+        <button class="btn btn-primary" (click)="irWhatsApp()">
+          <i class="bi bi-whatsapp"></i> {{'HOME.HABLEMOS' | translate}}
+        </button>
+        <span class="cv-link" (click)="descargarCV()">
+          {{'HOME.DOWNLOAD' | translate}} <i class="bi bi-download"></i>
+        </span>
+      </div>
+      <div class="hero-social">
+        <a href="https://www.linkedin.com/in/jos%C3%A9-alejandro-arias-pinz%C3%B3n-20253a24a/" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/AariazP" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.youtube.com/@Ariaz_/videos" target="_blank"><i class="bi bi-youtube"></i></a>
+      </div>
     </div>
-
-    <div class="col-12 col-md-5 text-center">
-        <img src="assets/imgs/image+icons.png" alt="Alejandro Arias + icons" class="img-fluid">
+    <div class="hero-image">
+      <img src="assets/imgs/image+icons.png" alt="Alejandro Arias">
     </div>
-
-    <div class="col-12 col-md-3 text-center">
-
-        <h6 class="cv" (click)="descargarCV()">{{'HOME.DOWNLOAD' | translate}}<i class="bi bi-arrow-bar-down"></i></h6>
-        <button class="btn btn-conversemos" (click)="irWhatsApp()"><i class="bi bi-whatsapp"></i> {{'HOME.HABLEMOS' | translate}}</button>
-
-    </div>
-</div>
+  </div>
+</section>
