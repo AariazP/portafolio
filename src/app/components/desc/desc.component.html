@@ -1,16 +1,20 @@
-<section class="py-20 px-8">
-  <div class="max-w-[1100px] mx-auto">
-    <div class="grid grid-cols-1 md:grid-cols-[1fr_1.2fr] gap-16 items-center max-md:gap-8">
-      <div>
-        <img src="assets/imgs/profile.jpg" alt="Alejandro Arias" class="w-full rounded-2xl shadow-image">
+<section class="relative py-24 lg:py-32">
+  <div class="max-w-6xl mx-auto px-6 lg:px-12">
+    <div class="grid lg:grid-cols-5 gap-12 lg:gap-20 items-center">
+      <div class="lg:col-span-2" scrollReveal>
+        <div class="relative">
+          <div class="absolute -inset-4 rounded-3xl opacity-30"
+            style="background: linear-gradient(135deg, var(--color-accent), transparent 60%)"></div>
+          <img src="assets/imgs/profile.jpg" alt="Alejandro Arias"
+            class="relative w-full rounded-2xl shadow-image">
+        </div>
       </div>
-      <div>
-        <span class="inline-block bg-accent-dim text-accent px-4 py-1.5 rounded-full text-sm font-semibold mb-4">{{'DESC.TITLE' | translate}}</span>
-        <h2 class="text-4xl font-extrabold mb-6 max-md:text-3xl text-default">{{'DESC.NAME' | translate}}</h2>
-        <p class="text-muted text-sm font-light leading-relaxed mb-4">{{'DESC.DESCRIPCION_1' | translate}}</p>
-        <p class="text-muted text-sm font-light leading-relaxed mb-4">{{'DESC.DESCRIPCION_2' | translate}}</p>
-        <p class="text-muted text-sm font-light leading-relaxed mb-4">{{'DESC.DESCRIPCION_3' | translate}}</p>
-        <p class="text-muted text-sm font-light leading-relaxed">{{'DESC.DESCRIPCION_4' | translate}}</p>
+      <div class="lg:col-span-3" scrollReveal [delay]="200">
+        <h2 class="text-3xl lg:text-4xl font-extrabold mb-2 text-default">{{'DESC.NAME' | translate}}</h2>
+        <div class="h-1 w-16 rounded-full mb-6" style="background: linear-gradient(90deg, var(--color-accent), transparent)"></div>
+        @for (p of paragraphs; track p) {
+          <p class="text-muted text-base font-light leading-relaxed mb-4">{{ p | translate }}</p>
+        }
       </div>
     </div>
   </div>

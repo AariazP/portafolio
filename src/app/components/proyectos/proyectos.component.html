@@ -1,27 +1,29 @@
-<section class="py-20 px-8" id="portafolio">
-  <div class="max-w-[1200px] mx-auto">
-    <div class="text-center mb-12">
-      <span class="inline-block bg-accent-dim text-accent px-4 py-1.5 rounded-full text-sm font-semibold mb-4">{{'PROYECTOS.SUBTITLE' | translate}}</span>
-      <h2 class="text-4xl font-bold max-md:text-3xl text-default">{{'PROYECTOS.TITLE' | translate}}</h2>
+<section class="relative py-24 lg:py-32" id="portafolio">
+  <div class="max-w-6xl mx-auto px-6 lg:px-12">
+    <div class="text-center mb-16" scrollReveal>
+      <h2 class="text-3xl lg:text-5xl font-extrabold text-default">{{'PROYECTOS.TITLE' | translate}}</h2>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[1100px] mx-auto">
-      @for (proyecto of proyectos; track proyecto.title) {
-        <div class="bg-secondary border rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-accent-lg hover:border-accent">
-          <img [src]="proyecto.img" [alt]="proyecto.title" class="w-full h-[180px] object-cover">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      @for (p of proyectos; track p.title; let i = $index) {
+        <div class="card-hover group overflow-hidden" scrollReveal [delay]="i * 50">
+          <div class="relative h-48 overflow-hidden">
+            <div class="absolute inset-0 z-10 transition-opacity duration-500 opacity-0 group-hover:opacity-100"
+              style="background: linear-gradient(to top, var(--color-secondary), transparent)"></div>
+            <img [src]="p.img" [alt]="p.title" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+          </div>
           <div class="p-6">
-            <h3 class="text-lg font-bold text-accent mb-3">{{ proyecto.title | translate }}</h3>
-            <p class="text-sm text-muted font-light leading-relaxed mb-4">{{ proyecto.desc | translate }}</p>
-            <div class="flex gap-2 mb-4 flex-wrap">
-              @for (tag of proyecto.tags; track tag.label) {
-                <span class="text-xs font-semibold px-2.5 py-1 rounded-full"
-                  [style.background]="tag.color + '33'"
-                  [style.color]="tag.color">{{ tag.label }}</span>
+            <div class="flex flex-wrap gap-1.5 mb-3">
+              @for (tag of p.tags; track tag.label) {
+                <span class="text-[10px] font-semibold px-2.5 py-1 rounded-full"
+                  [style.background]="tag.color + '18'" [style.color]="tag.color">{{ tag.label }}</span>
               }
             </div>
-            <a [href]="proyecto.link" target="_blank"
-              class="inline-flex items-center gap-1.5 bg-accent-dim text-accent px-4 py-2 rounded-lg no-underline text-sm font-semibold transition-all hover:bg-accent hover:text-white">
-              <i class="bi bi-github"></i> {{'PROYECTOS.TEXT_BUTTON' | translate}}
+            <h3 class="text-base font-bold text-default mb-2">{{ p.title | translate }}</h3>
+            <p class="text-xs text-muted font-light leading-relaxed mb-4 line-clamp-2">{{ p.desc | translate }}</p>
+            <a [href]="p.link" target="_blank"
+              class="inline-flex items-center gap-2 text-xs font-semibold text-accent hover:text-white px-4 py-2 rounded-xl no-underline transition-all duration-300 hover:bg-accent bg-accent-dim">
+              <i class="bi bi-github"></i> {{'PROYECTOS.TEXT_BUTTON' | translate}} <i class="bi bi-arrow-up-right text-[10px]"></i>
             </a>
           </div>
         </div>

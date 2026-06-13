@@ -1,9 +1,11 @@
-<div class="bg-secondary border rounded-xl p-6 mb-6 transition-all duration-300 hover:border-accent hover:translate-x-1 hover:shadow-accent-sm">
-  <h4 class="text-lg font-semibold mb-2 text-default">{{title}}</h4>
+<div class="card-hover p-5 mb-6" scrollReveal>
+  <h4 class="text-base font-bold text-default mb-2">{{title}}</h4>
   <p class="text-sm text-muted font-light leading-relaxed mb-4">{{parrafo}}</p>
-  <img [src]="img" alt="{{title}}" loading="lazy" class="w-full max-h-[180px] object-cover rounded-lg mb-4">
-  <div class="flex gap-6 text-sm text-muted-light">
-    <span><i class="bi bi-calendar3 mr-1"></i> {{fecha}}</span>
-    <span><i class="bi bi-clock mr-1"></i> {{duracion}}</span>
+  @if (img) {
+    <img [src]="img" alt="{{title}}" loading="lazy" class="w-full max-h-36 object-cover rounded-xl mb-4">
+  }
+  <div class="flex items-center gap-4 text-xs text-muted-light">
+    <span class="inline-flex items-center gap-1.5"><i class="bi bi-calendar3"></i> {{fecha}}</span>
+    <span class="inline-flex items-center gap-1.5"><i class="bi bi-clock"></i> {{duracion}}</span>
   </div>
 </div>

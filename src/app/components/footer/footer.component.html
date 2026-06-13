@@ -1,25 +1,35 @@
-<footer class="py-20 px-8 pt-20 pb-8 border-t" id="contact">
-  <div class="max-w-[1200px] mx-auto">
-    <div class="text-center mb-8">
-      <span class="inline-block bg-accent-dim text-accent px-4 py-1.5 rounded-full text-sm font-semibold mb-4">{{'FOOTER.TITLE' | translate}}</span>
-      <h2 class="text-4xl font-bold max-md:text-3xl text-default">{{'FOOTER.TITLE' | translate}}</h2>
+<footer class="relative pt-24 lg:pt-32 pb-10" id="contact">
+  <div class="absolute top-0 left-0 right-0 h-px" style="background: linear-gradient(90deg, transparent, var(--color-border), transparent)"></div>
+  <div class="max-w-6xl mx-auto px-6 lg:px-12">
+    <div class="text-center mb-12" scrollReveal>
+      <h2 class="text-3xl lg:text-5xl font-extrabold text-default mb-4">{{'FOOTER.TITLE' | translate}}</h2>
+      <p class="text-muted text-base font-light max-w-md mx-auto">{{'FOOTER.IR-INICIO' | translate}}</p>
     </div>
 
-    <div class="flex items-center justify-center gap-4 mb-12">
-      <a href="mailto:alejo17ariazpzn@gmail.com" class="text-muted hover:text-accent text-lg no-underline transition-colors">
-        <i class="bi bi-envelope-fill mr-2"></i> {{ correo }}
-      </a>
-      <button (click)="copiar()" title="Copy email"
-        class="bg-accent-dim border text-accent px-3 py-2 rounded-lg cursor-pointer text-lg transition-all hover:bg-accent hover:text-white">
-        <i class="bi bi-clipboard"></i>
-      </button>
+    <div class="flex flex-col items-center gap-6 mb-16" scrollReveal [delay]="200">
+      <div class="flex items-center gap-4 glass px-6 py-4 rounded-2xl shadow-card">
+        <i class="bi bi-envelope-fill text-accent text-lg"></i>
+        <a href="mailto:{{correo}}" class="text-default hover:text-accent no-underline transition-colors text-sm font-medium">{{ correo }}</a>
+        <button (click)="copiar()" title="Copy email"
+          class="w-9 h-9 flex items-center justify-center rounded-xl text-muted-light hover:text-accent hover:bg-accent-light bg-transparent border border-[var(--color-border)] cursor-pointer transition-all duration-300">
+          <i class="bi bi-clipboard text-sm"></i>
+        </button>
+      </div>
+      <div class="flex items-center gap-3">
+        @for (s of socials; track s.name) {
+          <a [href]="s.url" target="_blank"
+            class="w-10 h-10 flex items-center justify-center rounded-xl text-muted-light hover:text-accent hover:bg-accent-light no-underline transition-all duration-300">
+            <i [class]="s.icon"></i>
+          </a>
+        }
+      </div>
     </div>
 
-    <div class="flex flex-col items-center gap-4">
-      <a href="#inicio" class="text-muted-light hover:text-accent no-underline text-sm transition-colors">
+    <div class="flex flex-col items-center gap-2 pt-8" style="border-top: 1px solid var(--color-border)">
+      <a href="#inicio" class="text-muted-light hover:text-accent no-underline text-xs transition-colors">
         <i class="bi bi-arrow-up mr-1"></i> {{'FOOTER.IR-INICIO' | translate}}
       </a>
-      <p class="text-muted-light text-sm">Copyright &copy; Alejandro Arias • 2023</p>
+      <p class="text-muted-light text-xs">&copy; Alejandro Arias • 2023</p>
     </div>
   </div>
 </footer>

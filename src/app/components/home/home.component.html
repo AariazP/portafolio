@@ -1,29 +1,60 @@
-<section class="min-h-screen flex items-center px-16 pt-20 max-md:px-6 max-md:pt-24 max-md:pb-12" id="inicio">
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-[1200px] mx-auto w-full max-md:gap-8 max-md:text-center">
-    <div>
-      <span class="inline-block bg-accent-dim text-accent px-4 py-1.5 rounded-full text-sm font-semibold mb-4">{{'HOME.SALUDO' | translate}}</span>
-      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-2 text-default">{{'HOME.NOMBRE' | translate}}</h1>
-      <p class="text-muted text-lg font-light mb-8">{{'HOME.DESCRIPCION' | translate}}</p>
-      <div class="flex items-center gap-6 mb-8 max-md:flex-col max-md:items-center">
-        <button (click)="irWhatsApp()"
-          class="bg-accent text-white px-6 py-3 rounded-lg font-semibold cursor-pointer transition-all duration-300 hover:bg-accent/90 hover:-translate-y-0.5 hover:shadow-btn border-none">
-          <i class="bi bi-whatsapp"></i> {{'HOME.HABLEMOS' | translate}}
-        </button>
-        <span (click)="descargarCV()" class="text-muted hover:text-default cursor-pointer text-sm transition-colors">
-          {{'HOME.DOWNLOAD' | translate}} <i class="bi bi-download"></i>
+<section class="relative min-h-screen flex items-center overflow-hidden" id="inicio">
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 rounded-full opacity-[0.08]" style="background: radial-gradient(circle, var(--color-accent) 0%, transparent 70%)"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-80 h-80 rounded-full opacity-[0.06]" style="background: radial-gradient(circle, var(--color-accent) 0%, transparent 70%)"></div>
+  </div>
+
+  <div class="relative w-full max-w-6xl mx-auto px-6 lg:px-12 pt-24 pb-12">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div class="text-center lg:text-left" scrollReveal>
+        <span class="section-chip mb-6">
+          <i class="bi bi-hand-wave"></i>{{'HOME.SALUDO' | translate}}
         </span>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.1] mb-4 text-default">
+          {{'HOME.NOMBRE' | translate}}
+        </h1>
+        <p class="text-lg text-muted font-light leading-relaxed mb-8 max-w-lg lg:mx-0 mx-auto">
+          {{'HOME.DESCRIPCION' | translate}}
+        </p>
+        <div class="flex flex-col sm:flex-row items-center gap-4 mb-10">
+          <button (click)="irWhatsApp()"
+            class="group relative inline-flex items-center gap-3 px-8 py-3.5 rounded-2xl font-semibold text-white cursor-pointer border-none transition-all duration-500 hover:-translate-y-0.5"
+            style="background: linear-gradient(135deg, var(--color-accent), #a78bfa)">
+            <span class="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              style="background: linear-gradient(135deg, #a78bfa, var(--color-accent))"></span>
+            <span class="relative flex items-center gap-3">
+              <i class="bi bi-whatsapp text-lg"></i>
+              {{'HOME.HABLEMOS' | translate}}
+            </span>
+          </button>
+          <button (click)="descargarCV()"
+            class="inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl font-medium text-muted hover:text-accent hover:bg-accent-light cursor-pointer border border-[var(--color-border)] bg-transparent transition-all duration-300">
+            <i class="bi bi-download"></i>
+            {{'HOME.DOWNLOAD' | translate}}
+          </button>
+        </div>
+        <div class="flex items-center gap-3 justify-center lg:justify-start">
+          <span class="text-xs text-muted-light uppercase tracking-widest mr-2">{{'HOME.SALUDO' | translate}}</span>
+          <div class="h-px w-8 bg-border"></div>
+          @for (social of socials; track social.name) {
+            <a [href]="social.url" target="_blank"
+              class="w-10 h-10 flex items-center justify-center rounded-xl text-muted-light hover:text-accent hover:bg-accent-light no-underline transition-all duration-300">
+              <i [class]="social.icon + ' text-lg'"></i>
+            </a>
+          }
+        </div>
       </div>
-      <div class="flex gap-4 max-md:justify-center">
-        <a href="https://www.linkedin.com/in/jos%C3%A9-alejandro-arias-pinz%C3%B3n-20253a24a/" target="_blank"
-          class="text-muted-light hover:text-accent text-xl transition-all hover:-translate-y-0.5"><i class="bi bi-linkedin"></i></a>
-        <a href="https://github.com/AariazP" target="_blank"
-          class="text-muted-light hover:text-accent text-xl transition-all hover:-translate-y-0.5"><i class="bi bi-github"></i></a>
-        <a href="https://www.youtube.com/@Ariaz_/videos" target="_blank"
-          class="text-muted-light hover:text-accent text-xl transition-all hover:-translate-y-0.5"><i class="bi bi-youtube"></i></a>
+
+      <div class="relative flex justify-center lg:justify-end" scrollReveal [delay]="200">
+        <div class="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
+          <div class="absolute inset-0 rounded-full opacity-20 animate-pulse-glow"
+            style="background: radial-gradient(circle, var(--color-accent) 0%, transparent 70%)"></div>
+          <div class="absolute inset-2 rounded-full border-2 border-dashed opacity-20"
+            style="border-color: var(--color-accent); animation: spin 30s linear infinite"></div>
+          <img src="assets/imgs/image+icons.png" alt="Alejandro Arias"
+            class="relative w-full h-full object-contain drop-shadow-2xl">
+        </div>
       </div>
-    </div>
-    <div class="max-md:order-first">
-      <img src="assets/imgs/image+icons.png" alt="Alejandro Arias" class="w-full max-w-[450px] block mx-auto max-md:max-w-[280px]">
     </div>
   </div>
 </section>

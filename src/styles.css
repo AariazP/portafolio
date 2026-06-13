@@ -1,5 +1,6 @@
 @import "bootstrap-icons/font/bootstrap-icons.css";
 @import "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -9,41 +10,94 @@
   --color-primary: #f8f9fa;
   --color-secondary: #ffffff;
   --color-accent: #7B4AE2;
-  --color-accent-dim: rgba(123, 74, 226, 0.08);
+  --color-accent-dim: rgba(123, 74, 226, 0.12);
+  --color-accent-light: rgba(123, 74, 226, 0.05);
   --color-muted: rgba(0, 0, 0, 0.55);
   --color-muted-light: rgba(0, 0, 0, 0.3);
   --color-text: #1a1a2e;
-  --color-border: rgba(123, 74, 226, 0.2);
-  --color-shadow: rgba(123, 74, 226, 0.1);
-  --color-shadow-dark: rgba(0, 0, 0, 0.08);
-  --color-shadow-btn: rgba(123, 74, 226, 0.25);
+  --color-border: rgba(123, 74, 226, 0.15);
+  --color-shadow: rgba(123, 74, 226, 0.08);
+  --color-shadow-dark: rgba(0, 0, 0, 0.06);
+  --color-shadow-btn: rgba(123, 74, 226, 0.2);
+  --color-glass: rgba(255, 255, 255, 0.7);
+  --color-glass-border: rgba(123, 74, 226, 0.1);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-primary: #090e16;
+    --color-primary: #080c14;
     --color-secondary: #0d1520;
-    --color-accent: #7B4AE2;
-    --color-accent-dim: rgba(123, 74, 226, 0.15);
-    --color-muted: rgba(213, 213, 213, 0.7);
-    --color-muted-light: rgba(213, 213, 213, 0.4);
-    --color-text: #ffffff;
-    --color-border: rgba(123, 74, 226, 0.25);
-    --color-shadow: rgba(123, 74, 226, 0.15);
+    --color-accent: #8B5CF6;
+    --color-accent-dim: rgba(139, 92, 246, 0.15);
+    --color-accent-light: rgba(139, 92, 246, 0.05);
+    --color-muted: rgba(213, 213, 213, 0.65);
+    --color-muted-light: rgba(213, 213, 213, 0.35);
+    --color-text: #f1f1f1;
+    --color-border: rgba(139, 92, 246, 0.2);
+    --color-shadow: rgba(139, 92, 246, 0.1);
     --color-shadow-dark: rgba(0, 0, 0, 0.5);
-    --color-shadow-btn: rgba(123, 74, 226, 0.3);
+    --color-shadow-btn: rgba(139, 92, 246, 0.3);
+    --color-glass: rgba(13, 21, 32, 0.7);
+    --color-glass-border: rgba(139, 92, 246, 0.1);
   }
 }
 
 @layer base {
   body {
-    @apply bg-primary text-default;
+    @apply bg-primary text-default antialiased;
   }
-  .border, .border-t, .border-b, .border-r, .border-l, .border-x, .border-y {
-    border-color: var(--color-border);
+  ::selection {
+    background: var(--color-accent-dim);
+    color: var(--color-accent);
+  }
+  ::-webkit-scrollbar { width: 8px; }
+  ::-webkit-scrollbar-track { background: var(--color-primary); }
+  ::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 4px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--color-accent); }
+}
+
+@layer components {
+  .glass {
+    background: var(--color-glass);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--color-glass-border);
+  }
+  .gradient-text {
+    background: linear-gradient(135deg, var(--color-accent), #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .section-chip {
+    @apply inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest;
+    background: var(--color-accent-dim);
+    color: var(--color-accent);
+  }
+  .card-base {
+    @apply rounded-2xl transition-all duration-500;
+    background: var(--color-secondary);
+    border: 1px solid var(--color-border);
+    box-shadow: 0 4px 24px var(--color-shadow);
+  }
+  .card-hover {
+    @apply card-base hover:-translate-y-1;
+  }
+  .card-hover:hover {
+    box-shadow: 0 12px 48px var(--color-shadow), 0 0 0 1px var(--color-accent);
+    border-color: var(--color-accent);
   }
 }
 
-html {
-  scroll-behavior: smooth;
+html { scroll-behavior: smooth; }
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.reveal.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
 }

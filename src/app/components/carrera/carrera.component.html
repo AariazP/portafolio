@@ -1,59 +1,62 @@
-<section class="py-20 px-8" id="carrera">
-  <div class="max-w-[1200px] mx-auto">
-    <div class="text-center mb-12">
-      <span class="inline-block bg-accent-dim text-accent px-4 py-1.5 rounded-full text-sm font-semibold mb-4">{{'CARRERA.TRAYECTORIA' | translate}}</span>
-      <h2 class="text-4xl font-bold max-md:text-3xl">{{'CARRERA.TITLE' | translate}}</h2>
+<section class="relative py-24 lg:py-32" id="carrera">
+  <div class="max-w-6xl mx-auto px-6 lg:px-12">
+    <div class="text-center mb-16" scrollReveal>
+      <h2 class="text-3xl lg:text-5xl font-extrabold text-default">{{'CARRERA.TITLE' | translate}}</h2>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-[1100px] mx-auto">
-      <div>
-        <h3 class="text-2xl font-normal text-muted text-center mb-6">
-          {{'CARRERA.SUBTITLE_1' | translate}}
-          <small class="block text-sm font-light text-muted-light mt-1">{{'CARRERA.SUBTITLE_1.1' | translate}}</small>
-        </h3>
-        <app-carrera-item
-          title="{{'CARRERA-ITEM.TITLE_1' | translate}}"
-          img="assets/educacion/sinfoci.png"
-          parrafo="{{'CARRERA-ITEM.DESCRIPCION_1' | translate}}"
-          fecha="{{'CARRERA-ITEM.TIME_1' | translate}}"
-          duracion="{{'CARRERA-ITEM.DURATION_1' | translate}}" />
-        <app-carrera-item
-          title="{{'CARRERA-ITEM.TITLE_2' | translate}}"
-          img="assets/educacion/MDD.png"
-          parrafo="{{'CARRERA-ITEM.DESCRIPCION_2' | translate}}"
-          fecha="{{'CARRERA-ITEM.TIME_2' | translate}}"
-          duracion="{{'CARRERA-ITEM.DURATION_2' | translate}}" />
-        <app-carrera-item
-          title="{{'CARRERA-ITEM.TITLE_3' | translate}}"
-          img="assets/educacion/sis.jpg"
-          parrafo="{{'CARRERA-ITEM.DESCRIPCION_3' | translate}}"
-          fecha="{{'CARRERA-ITEM.TIME_3' | translate}}"
-          duracion="{{'CARRERA-ITEM.DURATION_3' | translate}}" />
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
+      <div scrollReveal>
+        <div class="flex items-center gap-3 mb-8">
+          <div class="w-10 h-10 rounded-xl flex items-center justify-center text-sm font-bold" 
+            style="background: var(--color-accent-dim); color: var(--color-accent)">
+            <i class="bi bi-briefcase-fill"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-default">{{'CARRERA.SUBTITLE_1' | translate}}</h3>
+            <span class="text-xs text-muted-light">{{'CARRERA.SUBTITLE_1.1' | translate}}</span>
+          </div>
+        </div>
+        <div class="relative pl-8 border-l-2" style="border-color: var(--color-border)">
+          <div class="absolute left-[-5px] top-2 w-2 h-2 rounded-full" style="background: var(--color-accent)"></div>
+          <app-carrera-item title="{{'CARRERA-ITEM.TITLE_1' | translate}}" img="assets/educacion/sinfoci.png"
+            parrafo="{{'CARRERA-ITEM.DESCRIPCION_1' | translate}}" fecha="{{'CARRERA-ITEM.TIME_1' | translate}}"
+            duracion="{{'CARRERA-ITEM.DURATION_1' | translate}}" />
+          <div class="absolute left-[-5px] top-2 w-2 h-2 rounded-full" style="background: var(--color-border)"></div>
+          <app-carrera-item title="{{'CARRERA-ITEM.TITLE_2' | translate}}" img="assets/educacion/MDD.png"
+            parrafo="{{'CARRERA-ITEM.DESCRIPCION_2' | translate}}" fecha="{{'CARRERA-ITEM.TIME_2' | translate}}"
+            duracion="{{'CARRERA-ITEM.DURATION_2' | translate}}" />
+          <div class="absolute left-[-5px] top-2 w-2 h-2 rounded-full" style="background: var(--color-border)"></div>
+          <app-carrera-item title="{{'CARRERA-ITEM.TITLE_3' | translate}}" img="assets/educacion/sis.jpg"
+            parrafo="{{'CARRERA-ITEM.DESCRIPCION_3' | translate}}" fecha="{{'CARRERA-ITEM.TIME_3' | translate}}"
+            duracion="{{'CARRERA-ITEM.DURATION_3' | translate}}" />
+        </div>
       </div>
 
-      <div>
-        <h3 class="text-2xl font-normal text-muted text-center mb-6">
-          {{'CARRERA.SUBTITLE_2' | translate}}
-          <small class="block text-sm font-light text-muted-light mt-1">{{'CARRERA.SUBTITLE_2.2' | translate}}</small>
-        </h3>
-        <app-carrera-item
-          img="assets/educacion/udelQuindio.png"
-          title="{{'CARRERA-ITEM.TITLE_4' | translate}}"
-          parrafo="{{'CARRERA-ITEM.DESCRIPCION_4' | translate}}"
-          fecha="{{'CARRERA-ITEM.TIME_4' | translate}}"
-          duracion="{{'CARRERA-ITEM.DURATION_4' | translate}}" />
-        <app-carrera-item
-          img="assets/educacion/google.png"
-          title="{{'CARRERA-ITEM.TITLE_5' | translate}}"
-          parrafo="{{'CARRERA-ITEM.DESCRIPCION_5' | translate}}"
-          fecha="{{'CARRERA-ITEM.TIME_5' | translate}}"
-          duracion="{{'CARRERA-ITEM.DURATION_5' | translate}}" />
-        <app-carrera-item
-          img="assets/educacion/english.png"
-          title="{{'CARRERA-ITEM.TITLE_6' | translate}}"
-          parrafo="{{'CARRERA-ITEM.DESCRIPCION_6' | translate}}"
-          fecha="{{'CARRERA-ITEM.TIME_6' | translate}}"
-          duracion="{{'CARRERA-ITEM.DURATION_6' | translate}}" />
+      <div scrollReveal [delay]="200">
+        <div class="flex items-center gap-3 mb-8">
+          <div class="w-10 h-10 rounded-xl flex items-center justify-center text-sm font-bold"
+            style="background: var(--color-accent-dim); color: var(--color-accent)">
+            <i class="bi bi-mortarboard-fill"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-default">{{'CARRERA.SUBTITLE_2' | translate}}</h3>
+            <span class="text-xs text-muted-light">{{'CARRERA.SUBTITLE_2.2' | translate}}</span>
+          </div>
+        </div>
+        <div class="relative pl-8 border-l-2" style="border-color: var(--color-border)">
+          <div class="absolute left-[-5px] top-2 w-2 h-2 rounded-full" style="background: var(--color-accent)"></div>
+          <app-carrera-item img="assets/educacion/udelQuindio.png" title="{{'CARRERA-ITEM.TITLE_4' | translate}}"
+            parrafo="{{'CARRERA-ITEM.DESCRIPCION_4' | translate}}" fecha="{{'CARRERA-ITEM.TIME_4' | translate}}"
+            duracion="{{'CARRERA-ITEM.DURATION_4' | translate}}" />
+          <div class="absolute left-[-5px] top-2 w-2 h-2 rounded-full" style="background: var(--color-border)"></div>
+          <app-carrera-item img="assets/educacion/google.png" title="{{'CARRERA-ITEM.TITLE_5' | translate}}"
+            parrafo="{{'CARRERA-ITEM.DESCRIPCION_5' | translate}}" fecha="{{'CARRERA-ITEM.TIME_5' | translate}}"
+            duracion="{{'CARRERA-ITEM.DURATION_5' | translate}}" />
+          <div class="absolute left-[-5px] top-2 w-2 h-2 rounded-full" style="background: var(--color-border)"></div>
+          <app-carrera-item img="assets/educacion/english.png" title="{{'CARRERA-ITEM.TITLE_6' | translate}}"
+            parrafo="{{'CARRERA-ITEM.DESCRIPCION_6' | translate}}" fecha="{{'CARRERA-ITEM.TIME_6' | translate}}"
+            duracion="{{'CARRERA-ITEM.DURATION_6' | translate}}" />
+        </div>
       </div>
     </div>
   </div>

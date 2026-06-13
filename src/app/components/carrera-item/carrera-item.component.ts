@@ -1,11 +1,11 @@
 import { Component, Input } from '@angular/core';
+import { ScrollRevealDirective } from '../../directives/scroll-reveal.directive';
 
 @Component({
   selector: 'app-carrera-item',
   standalone: true,
-  imports: [],
+  imports: [ScrollRevealDirective],
   templateUrl: './carrera-item.component.html',
-  styleUrl: './carrera-item.component.css'
 })
 export class CarreraItemComponent {
   @Input() title!: string;
