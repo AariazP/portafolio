@@ -14,9 +14,5 @@ export class SobremiComponent {
     { icon: 'bi bi-bricks', title: 'SOBREMI.TITLE_2', subtitle: 'SOBREMI.SUBTITLE_2' },
     { icon: 'bi bi-diagram-3-fill', title: 'SOBREMI.TITLE_3', subtitle: 'SOBREMI.SUBTITLE_3' },
   ];
-  stats = [
-    { value: '3+', label: 'SOBREMI.TITLE_1' },
-    { value: '4+', label: 'SOBREMI.TITLE_2' },
-    { value: '1+', label: 'SOBREMI.TITLE_3' },
-  ];
+
 }

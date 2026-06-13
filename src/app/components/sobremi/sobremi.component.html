@@ -37,14 +37,5 @@
         </div>
       }
     </div>
-
-    <div class="grid grid-cols-3 gap-px rounded-2xl overflow-hidden" style="background: var(--color-border)" scrollReveal [delay]="400">
-      @for (stat of stats; track stat.label) {
-        <div class="bg-secondary py-8 lg:py-10 text-center">
-          <div class="text-3xl lg:text-4xl font-extrabold gradient-text mb-1">{{ stat.value }}</div>
-          <div class="text-xs text-muted uppercase tracking-wider">{{ stat.label | translate }}</div>
-        </div>
-      }
-    </div>
   </div>
 </section>
