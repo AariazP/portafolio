@@ -7,6 +7,7 @@ import { ProyectosComponent } from "./components/proyectos/proyectos.component";
 import { HabilidadesComponent } from "./components/habilidades/habilidades.component";
 import { CarreraComponent } from "./components/carrera/carrera.component";
 import { FooterComponent } from './components/footer/footer.component';
+import { IdiomasComponent } from './components/idiomas/idiomas.component';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +15,7 @@ import { FooterComponent } from './components/footer/footer.component';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   imports: [NavComponent, HomeComponent, SobremiComponent,
-    DescComponent, ProyectosComponent, HabilidadesComponent, CarreraComponent,
+    DescComponent, ProyectosComponent, HabilidadesComponent, IdiomasComponent, CarreraComponent,
     FooterComponent]
 })
 export class AppComponent { }

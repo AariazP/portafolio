@@ -1,0 +1,24 @@
+<section class="relative py-16 lg:py-20" id="idiomas">
+  <div class="max-w-6xl mx-auto px-6 lg:px-12">
+    <div class="text-center mb-10" scrollReveal>
+      <h2 class="text-3xl lg:text-5xl font-extrabold text-default">Idiomas</h2>
+    </div>
+
+    <div class="max-w-xl mx-auto grid sm:grid-cols-2 gap-6 justify-items-center">
+      @for (idio of idiomas; track idio.name; let i = $index) {
+        <div class="p-6 text-center" scrollReveal [delay]="i * 100">
+          <div class="w-14 h-14 mx-auto mb-4 rounded-full flex items-center justify-center text-lg font-bold tracking-wider transition-all duration-500 group-hover:scale-110"
+            style="background: var(--color-accent-dim); color: var(--color-accent)">
+            {{ idio.flag }}
+          </div>
+          <h3 class="text-base font-bold text-default mb-1">{{ idio.name | translate }}</h3>
+          <span class="text-xs font-medium block mb-3" style="color: var(--color-accent)">{{ idio.level | translate }}</span>
+          <div class="h-1.5 rounded-full overflow-hidden" style="background: var(--color-accent-dim)">
+            <div class="h-full rounded-full transition-all duration-700" [class]="idio.width"
+              style="background: var(--color-accent)"></div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

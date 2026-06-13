@@ -152,6 +152,14 @@
         "TIME_8": "Dic 2023",
         "ID_8": "W9ZD6VZTUACX"
     },
+    "IDIOMAS": {
+        "ESPANOL": "Espa\u00f1ol",
+        "INGLES": "Ingl\u00e9s",
+        "PORTUGUES": "Portugu\u00e9s",
+        "NATIVO": "Nativo",
+        "CONVERSACIONAL": "Conversacional",
+        "BASICO": "B\u00e1sico"
+    },
     "FOOTER": {
         "TITLE": "Contacto",
         "IR-INICIO": "Volver al inicio"

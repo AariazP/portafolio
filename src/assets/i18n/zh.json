@@ -152,6 +152,14 @@
         "TIME_8": "2023\u5e7412\u6708",
         "ID_8": "W9ZD6VZTUACX"
     },
+    "IDIOMAS": {
+        "ESPANOL": "\u897f\u73ed\u7259\u8bed",
+        "INGLES": "\u82f1\u8bed",
+        "PORTUGUES": "\u8461\u8404\u7259\u8bed",
+        "NATIVO": "\u6bcd\u8bed",
+        "CONVERSACIONAL": "\u4f1a\u8bdd",
+        "BASICO": "\u57fa\u7840"
+    },
     "FOOTER": {
         "TITLE": "\u8054\u7cfb",
         "IR-INICIO": "\u8fd4\u56de\u9996\u9875"
