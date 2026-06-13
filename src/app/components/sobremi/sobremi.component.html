@@ -1,4 +1,20 @@
 <section class="relative py-24 lg:py-32 overflow-hidden" id="sobremi">
+  <div class="absolute top-12 right-12 hidden lg:block pointer-events-none opacity-[0.04] font-mono text-xs leading-loose text-default">
+    <span class="text-accent">$</span> aws ec2 describe-instances<br>
+    <span class="text-muted">--region us-east-1 --output json</span><br>
+    <span class="text-muted-light">Status: running</span><br>
+    <span class="text-muted-light ml-4">Type: t3.medium</span><br>
+    <span class="text-muted-light ml-4">Az: us-east-1a</span>
+  </div>
+  <div class="absolute bottom-12 left-12 hidden lg:block pointer-events-none opacity-[0.03] font-mono text-xs leading-loose text-default text-right">
+    <span class="text-muted-light">┌─────────────────────┐</span><br>
+    <span class="text-muted-light">│  Container Status   │</span><br>
+    <span class="text-muted-light">├─────────────────────┤</span><br>
+    <span class="text-green-500">│  ● app  running     │</span><br>
+    <span class="text-green-500">│  ● db  running      │</span><br>
+    <span class="text-muted-light">│  ○ cache  paused    │</span><br>
+    <span class="text-muted-light">└─────────────────────┘</span>
+  </div>
   <div class="max-w-6xl mx-auto px-6 lg:px-12">
     <div class="text-center mb-16" scrollReveal>
       <h2 class="text-3xl lg:text-5xl font-extrabold text-default">
