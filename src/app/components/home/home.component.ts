@@ -15,7 +15,7 @@ export class HomeComponent {
     { name: 'YouTube', url: 'https://www.youtube.com/@Ariaz_/videos', icon: 'bi bi-youtube' },
   ];
 
-  irWhatsApp() { window.open('https://wa.link/c3ev4p', '_blank'); }
+  irWhatsApp() { window.open('https://wa.link/o5jpae', '_blank'); }
 
   descargarCV() {
     const link = document.createElement('a');
