@@ -150,7 +150,11 @@
         "TITLE_8": "Google \u9879\u76ee\u7ba1\u7406\u4e13\u9879\u8ba1\u5212",
         "ORGANIZATION_8": "Google",
         "TIME_8": "2023\u5e7412\u6708",
-        "ID_8": "W9ZD6VZTUACX"
+        "ID_8": "W9ZD6VZTUACX",
+        "TITLE_9": "Claude 101",
+        "ORGANIZATION_9": "Anthropic",
+        "TIME_9": "2026\u5e746\u6708",
+        "ID_9": "CLAUDE101"
     },
     "IDIOMAS": {
         "ESPANOL": "\u897f\u73ed\u7259\u8bed",

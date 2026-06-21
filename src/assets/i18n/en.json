@@ -150,7 +150,11 @@
         "TITLE_8": "Google Project Management Specialization",
         "ORGANIZATION_8": "Google",
         "TIME_8": "Dec 2023",
-        "ID_8": "W9ZD6VZTUACX"
+        "ID_8": "W9ZD6VZTUACX",
+        "TITLE_9": "Claude 101",
+        "ORGANIZATION_9": "Anthropic",
+        "TIME_9": "Jun 2026",
+        "ID_9": "CLAUDE101"
     },
     "IDIOMAS": {
         "ESPANOL": "Spanish",
