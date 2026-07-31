@@ -66,7 +66,15 @@
         "SUBTITLE_1": "Professional Experience",
         "SUBTITLE_1.1": "Cloud & DevOps",
         "SUBTITLE_2": "Education",
-        "SUBTITLE_3": "Certifications"
+        "SUBTITLE_3": "Certifications",
+        "SUBTITLE_4": "Publications"
+    },
+    "CARRERA-PUB": {
+        "TITLE_1": "Systematic Mapping Study: Container-Based Virtualization",
+        "ORGANIZATION_1": "Journal of Internet Services and Applications (JISA)",
+        "TIME_1": "Jul 2026",
+        "DESCRIPCION_1": "Systematic mapping study analyzing 226 studies published between 2022 and 2024 on container-based virtualization (Docker and Kubernetes). It proposes a reference taxonomy and six open research lines. Co-authors: Anubis Correa Urbano, Luis Eduardo Sep\u00falveda Rodr\u00edguez, and Christian Andres Candela Uribe.",
+        "BUTTON_1": "View publication"
     },
     "CARRERA-ITEM": {
         "TITLE_1": "Transbank Chile",
@@ -74,7 +82,7 @@
         "DESCRIPCION_1": "Data engineering at Transbank, Chile. Building data pipelines, processing and analyzing large volumes of information for the payments industry.",
         "TIME_1": "Jun 2026 ~ Present",
         "DURATION_1": "2 months",
-        "SKILLS_1": "Python, SQL, ETL, Pandas, AWS Glue, Apache Kafka, AWS Lambda, Docker, Git, CI/CD",
+        "SKILLS_1": "Python, SQL, ETL, Snowflake, Pandas, AWS Glue, Apache Kafka, AWS Lambda, Docker, Git, CI/CD",
         "TITLE_2": "VivexIA",
         "SUBTITLE_2": "AI Agents Implementation",
         "DESCRIPCION_2": "Project implementing artificial intelligence agents at the Filandia Mental Hospital (Quind\u00edo, Colombia).",
@@ -166,7 +174,27 @@
         "TITLE_9": "Claude 101",
         "ORGANIZATION_9": "Anthropic",
         "TIME_9": "Jun 2026",
-        "ID_9": "CLAUDE101"
+        "ID_9": "vxea5o5puoj7",
+        "TITLE_10": "Introduction to Model Context Protocol",
+        "ORGANIZATION_10": "Anthropic",
+        "TIME_10": "Jul 2026",
+        "ID_10": "smuwodn7th6h",
+        "TITLE_11": "AI Fluency: Framework & Foundations",
+        "ORGANIZATION_11": "Anthropic",
+        "TIME_11": "Jul 2026",
+        "ID_11": "hahm6dqjm3wo",
+        "TITLE_12": "Claude Code in Action",
+        "ORGANIZATION_12": "Anthropic",
+        "TIME_12": "Jul 2026",
+        "ID_12": "ve5a6snp47j4",
+        "TITLE_13": "Claude platform 101",
+        "ORGANIZATION_13": "Anthropic",
+        "TIME_13": "Jul 2026",
+        "ID_13": "ebz23oacdn4w",
+        "TITLE_14": "Claude code 101",
+        "ORGANIZATION_14": "Anthropic",
+        "TIME_14": "Jun 2026",
+        "ID_14": "ewitpt7k46q8"
     },
     "IDIOMAS": {
         "ESPANOL": "Spanish",

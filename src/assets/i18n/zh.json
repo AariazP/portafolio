@@ -66,7 +66,15 @@
         "SUBTITLE_1": "\u4e13\u4e1a\u7ecf\u5386",
         "SUBTITLE_1.1": "Cloud & DevOps",
         "SUBTITLE_2": "\u6559\u80b2",
-        "SUBTITLE_3": "\u8ba4\u8bc1"
+        "SUBTITLE_3": "\u8ba4\u8bc1",
+        "SUBTITLE_4": "\u53d1\u8868\u8bba\u6587"
+    },
+    "CARRERA-PUB": {
+        "TITLE_1": "\u7cfb\u7edf\u6620\u5c04\u7814\u7a76\uff1a\u57fa\u4e8e\u5bb9\u5668\u7684\u865a\u62df\u5316",
+        "ORGANIZATION_1": "\u4e92\u8054\u7f51\u670d\u52a1\u4e0e\u5e94\u7528\u6742\u5fd7 (JISA)",
+        "TIME_1": "2026\u5e747\u6708",
+        "DESCRIPCION_1": "\u7cfb\u7edf\u6620\u5c04\u7814\u7a76\uff0c\u5206\u6790 2022 \u81f3 2024 \u5e74\u95f4\u53d1\u8868\u7684 226 \u9879\u5173\u4e8e\u57fa\u4e8e\u5bb9\u5668\u7684\u865a\u62df\u5316\uff08Docker \u548c Kubernetes\uff09\u7814\u7a76\u3002\u63d0\u51fa\u53c2\u8003\u5206\u7c7b\u6cd5\u548c\u516d\u6761\u5f00\u653e\u7814\u7a76\u8def\u7ebf\u3002\u5408\u8457\u8005\uff1aAnubis Correa Urbano\u3001Luis Eduardo Sep\u00falveda Rodr\u00edguez \u548c Christian Andres Candela Uribe\u3002",
+        "BUTTON_1": "\u67e5\u770b\u8bba\u6587"
     },
     "CARRERA-ITEM": {
         "TITLE_1": "Transbank \u667a\u5229",
@@ -74,7 +82,7 @@
         "DESCRIPCION_1": "\u5728 Transbank\uff08\u667a\u5229\uff09\u4ece\u4e8b\u6570\u636e\u5de5\u7a0b\u3002\u6784\u5efa\u6570\u636e\u7ba1\u9053\uff0c\u5904\u7406\u548c\u5206\u6790\u652f\u4ed8\u884c\u4e1a\u7684\u6d77\u91cf\u4fe1\u606f\u3002",
         "TIME_1": "2026\u5e746\u6708 ~ \u73b0\u5728",
         "DURATION_1": "2\u4e2a\u6708",
-        "SKILLS_1": "Python, SQL, ETL, Pandas, AWS Glue, Apache Kafka, AWS Lambda, Docker, Git, CI/CD",
+        "SKILLS_1": "Python, SQL, ETL, Snowflake, Pandas, AWS Glue, Apache Kafka, AWS Lambda, Docker, Git, CI/CD",
         "TITLE_2": "VivexIA",
         "SUBTITLE_2": "AI \u667a\u80fd\u4f53\u5b9e\u65bd",
         "DESCRIPCION_2": "\u5728\u83f2\u5170\u8fea\u4e9a\u7cbe\u795e\u75c5\u533b\u9662\uff08\u54e5\u4f26\u6bd4\u4e9a\u00b7\u91d1\u5fb7\u7eb3\u7701\uff09\u5b9e\u65bd\u4eba\u5de5\u667a\u80fd\u667a\u80fd\u4f53\u7684\u9879\u76ee\u3002",
@@ -166,7 +174,27 @@
         "TITLE_9": "Claude 101",
         "ORGANIZATION_9": "Anthropic",
         "TIME_9": "2026\u5e746\u6708",
-        "ID_9": "CLAUDE101"
+        "ID_9": "vxea5o5puoj7",
+        "TITLE_10": "\u6a21\u578b\u4e0a\u4e0b\u6587\u534f\u8bae\u4ecb\u7ecd",
+        "ORGANIZATION_10": "Anthropic",
+        "TIME_10": "2026\u5e747\u6708",
+        "ID_10": "smuwodn7th6h",
+        "TITLE_11": "AI \u6d41\u7545\u5ea6\uff1a\u6846\u67b6\u4e0e\u57fa\u7840",
+        "ORGANIZATION_11": "Anthropic",
+        "TIME_11": "2026\u5e747\u6708",
+        "ID_11": "hahm6dqjm3wo",
+        "TITLE_12": "Claude Code \u5b9e\u6218",
+        "ORGANIZATION_12": "Anthropic",
+        "TIME_12": "2026\u5e747\u6708",
+        "ID_12": "ve5a6snp47j4",
+        "TITLE_13": "Claude \u5e73\u53f0 101",
+        "ORGANIZATION_13": "Anthropic",
+        "TIME_13": "2026\u5e747\u6708",
+        "ID_13": "ebz23oacdn4w",
+        "TITLE_14": "Claude Code 101",
+        "ORGANIZATION_14": "Anthropic",
+        "TIME_14": "2026\u5e746\u6708",
+        "ID_14": "ewitpt7k46q8"
     },
     "IDIOMAS": {
         "ESPANOL": "\u897f\u73ed\u7259\u8bed",

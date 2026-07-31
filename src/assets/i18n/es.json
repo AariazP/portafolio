@@ -66,7 +66,15 @@
         "SUBTITLE_1": "Experiencia Profesional",
         "SUBTITLE_1.1": "Cloud & DevOps",
         "SUBTITLE_2": "Educaci\u00f3n",
-        "SUBTITLE_3": "Certificaciones"
+        "SUBTITLE_3": "Certificaciones",
+        "SUBTITLE_4": "Publicaciones"
+    },
+    "CARRERA-PUB": {
+        "TITLE_1": "Systematic Mapping Study: Virtualizaci\u00f3n Basada en Contenedores",
+        "ORGANIZATION_1": "Journal of Internet Services and Applications (JISA)",
+        "TIME_1": "Jul 2026",
+        "DESCRIPCION_1": "Estudio de mapeo sistem\u00e1tico que analiza 226 investigaciones publicadas entre 2022 y 2024 sobre virtualizaci\u00f3n basada en contenedores (Docker y Kubernetes). Propone una taxonom\u00eda de referencia y seis l\u00edneas de investigaci\u00f3n abiertas. Coautores: Anubis Correa Urbano, Luis Eduardo Sep\u00falveda Rodr\u00edguez y Christian Andres Candela Uribe.",
+        "BUTTON_1": "Ver publicaci\u00f3n"
     },
     "CARRERA-ITEM": {
         "TITLE_1": "Transbank Chile",
@@ -74,7 +82,7 @@
         "DESCRIPCION_1": "Ingenier\u00eda de datos en Transbank, Chile. Construcci\u00f3n de pipelines de datos, procesamiento y an\u00e1lisis de grandes vol\u00famenes de informaci\u00f3n para la industria de pagos.",
         "TIME_1": "Jun 2026 ~ Presente",
         "DURATION_1": "2 meses",
-        "SKILLS_1": "Python, SQL, ETL, Pandas, AWS Glue, Apache Kafka, AWS Lambda, Docker, Git, CI/CD",
+        "SKILLS_1": "Python, SQL, ETL, Snowflake, Pandas, AWS Glue, Apache Kafka, AWS Lambda, Docker, Git, CI/CD",
         "TITLE_2": "VivexIA",
         "SUBTITLE_2": "Implementaci\u00f3n de Agentes de IA",
         "DESCRIPCION_2": "Proyecto de implementaci\u00f3n de agentes de inteligencia artificial en el Hospital Mental de Filandia (Quind\u00edo, Colombia).",
@@ -166,7 +174,27 @@
         "TITLE_9": "Claude 101",
         "ORGANIZATION_9": "Anthropic",
         "TIME_9": "Jun 2026",
-        "ID_9": "CLAUDE101"
+        "ID_9": "vxea5o5puoj7",
+        "TITLE_10": "Introducci\u00f3n al Model Context Protocol",
+        "ORGANIZATION_10": "Anthropic",
+        "TIME_10": "Jul 2026",
+        "ID_10": "smuwodn7th6h",
+        "TITLE_11": "AI Fluency: Framework & Foundations",
+        "ORGANIZATION_11": "Anthropic",
+        "TIME_11": "Jul 2026",
+        "ID_11": "hahm6dqjm3wo",
+        "TITLE_12": "Claude Code in Action",
+        "ORGANIZATION_12": "Anthropic",
+        "TIME_12": "Jul 2026",
+        "ID_12": "ve5a6snp47j4",
+        "TITLE_13": "Claude platform 101",
+        "ORGANIZATION_13": "Anthropic",
+        "TIME_13": "Jul 2026",
+        "ID_13": "ebz23oacdn4w",
+        "TITLE_14": "Claude code 101",
+        "ORGANIZATION_14": "Anthropic",
+        "TIME_14": "Jun 2026",
+        "ID_14": "ewitpt7k46q8"
     },
     "IDIOMAS": {
         "ESPANOL": "Espa\u00f1ol",

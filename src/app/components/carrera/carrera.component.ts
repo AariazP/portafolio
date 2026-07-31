@@ -32,5 +32,12 @@ export class CarreraComponent {
     { org: 'CARRERA-CERT.ORGANIZATION_7', title: 'CARRERA-CERT.TITLE_7', fecha: 'CARRERA-CERT.TIME_7', id: 'CARRERA-CERT.ID_7' },
     { org: 'CARRERA-CERT.ORGANIZATION_8', title: 'CARRERA-CERT.TITLE_8', fecha: 'CARRERA-CERT.TIME_8', id: 'CARRERA-CERT.ID_8' },
     { org: 'CARRERA-CERT.ORGANIZATION_9', title: 'CARRERA-CERT.TITLE_9', fecha: 'CARRERA-CERT.TIME_9', id: 'CARRERA-CERT.ID_9' },
+    { org: 'CARRERA-CERT.ORGANIZATION_10', title: 'CARRERA-CERT.TITLE_10', fecha: 'CARRERA-CERT.TIME_10', id: 'CARRERA-CERT.ID_10' },
+    { org: 'CARRERA-CERT.ORGANIZATION_11', title: 'CARRERA-CERT.TITLE_11', fecha: 'CARRERA-CERT.TIME_11', id: 'CARRERA-CERT.ID_11' },
+    { org: 'CARRERA-CERT.ORGANIZATION_12', title: 'CARRERA-CERT.TITLE_12', fecha: 'CARRERA-CERT.TIME_12', id: 'CARRERA-CERT.ID_12' },
+    { org: 'CARRERA-CERT.ORGANIZATION_13', title: 'CARRERA-CERT.TITLE_13', fecha: 'CARRERA-CERT.TIME_13', id: 'CARRERA-CERT.ID_13' },
+    { org: 'CARRERA-CERT.ORGANIZATION_14', title: 'CARRERA-CERT.TITLE_14', fecha: 'CARRERA-CERT.TIME_14', id: 'CARRERA-CERT.ID_14' },
   ];
+
+  pubTags: string[] = ['Docker', 'Kubernetes', 'Systematic Mapping Study', 'Cloud Computing'];
 }
